@@ -1,0 +1,160 @@
+.dft {
+    &-container {
+        margin: auto;
+        width: 100%;
+        max-width: $dft-width-lg;
+        padding: 0 $grid-48;
+
+        @media screen and (max-width: $dft-width-sm) {
+            max-width: $dft-width-sm;
+            padding: 0 $grid-24;
+        }
+    }
+
+    &-mrg {
+        &_t {
+            &_120 { @include media_margin(margin-top, $grid-120, $dft-width-sm, $grid-64) }
+            &_64  { @include media_margin(margin-top, $grid-64,  $dft-width-sm, $grid-32) }
+            &_48  { @include media_margin(margin-top, $grid-48,  $dft-width-sm, $grid-24) }
+            &_32  { @include media_margin(margin-top, $grid-32,  $dft-width-sm, $grid-24) }
+            &_24  { @include media_margin(margin-top, $grid-24,  $dft-width-sm, $grid-16) }
+            &_16  { @include media_margin(margin-top, $grid-16,  $dft-width-sm, $grid-8 ) }
+        }
+
+        &_b {
+            &_120 { @include media_margin(margin-bottom, $grid-120, $dft-width-sm, $grid-64) }
+            &_64  { @include media_margin(margin-bottom, $grid-64,  $dft-width-sm, $grid-32) }
+            &_48  { @include media_margin(margin-bottom, $grid-48,  $dft-width-sm, $grid-24) }
+            &_32  { @include media_margin(margin-bottom, $grid-32,  $dft-width-sm, $grid-24) }
+            &_24  { @include media_margin(margin-bottom, $grid-24,  $dft-width-sm, $grid-16) }
+            &_16  { @include media_margin(margin-bottom, $grid-16,  $dft-width-sm, $grid-8 ) }
+        }
+    }
+
+    &-wrp {
+        &-mrg {
+            &_t {
+                &_120 { @include media_margin(margin-top, -$grid-120, $dft-width-sm, -$grid-64) }
+                &_64  { @include media_margin(margin-top, -$grid-64,  $dft-width-sm, -$grid-32) }
+                &_48  { @include media_margin(margin-top, -$grid-48,  $dft-width-sm, -$grid-24) }
+                &_32  { @include media_margin(margin-top, -$grid-32,  $dft-width-sm, -$grid-24) }
+                &_24  { @include media_margin(margin-top, -$grid-24,  $dft-width-sm, -$grid-16) }
+                &_16  { @include media_margin(margin-top, -$grid-16,  $dft-width-sm, -$grid-8 ) }
+            }
+    
+            &_b {
+                &_120 { @include media_margin(margin-bottom, -$grid-120, $dft-width-sm, -$grid-64) }
+                &_64  { @include media_margin(margin-bottom, -$grid-64,  $dft-width-sm, -$grid-32) }
+                &_48  { @include media_margin(margin-bottom, -$grid-48,  $dft-width-sm, -$grid-24) }
+                &_32  { @include media_margin(margin-bottom, -$grid-32,  $dft-width-sm, -$grid-24) }
+                &_24  { @include media_margin(margin-bottom, -$grid-24,  $dft-width-sm, -$grid-16) }
+                &_16  { @include media_margin(margin-bottom, -$grid-16,  $dft-width-sm, -$grid-8 ) }
+            }
+        }
+    }
+
+    &-block-pd {
+        &_left {
+            padding-left: $grid-32;
+        }
+
+        &_right {
+            padding-right: $grid-32;
+        }
+    }
+
+    &-text-pd {
+        &_left {
+            padding-left: $grid-8;
+        }
+
+        &_right {
+            padding-right: $grid-8;
+        }
+    }
+
+    &-btn {
+        display: inline-block;
+        padding: $grid-16 $grid-48;
+        border-radius: $grid-8;
+        font-size: 100%;
+        font-weight: 600;
+
+        background-color: $color-primary;
+        border: solid 1px $color-primary;
+        color: white;
+
+        &:hover, &:focus {
+            background-color: white;
+            border: solid 1px $color-border;
+            color: $color-primary;           
+        }
+
+        &_secondary {
+            background-color: white;
+            border: solid 1px $color-border;
+            color: $color-primary;
+
+            &:hover, &:focus {
+                border: solid 1px $color-primary;
+            }
+        }
+
+        &_sm {
+            font-size: $font-size-smaller;
+            padding: $grid-16 $grid-32;
+        }
+
+        @media screen and (max-width: $dft-width-sm) {
+            font-size: $font-size-smallest;
+            padding: $grid-16;
+        }
+    }
+
+    &-form-group {
+        display: flex;
+        flex-direction: column;
+    }
+
+    &-input {
+        padding: $grid-16 $grid-24;
+        border: 1px solid $color-border; 
+        border-radius: 12px;
+        font-size: 100%;
+        color: $color-font-secondary;
+
+        &:focus {
+            border: 1px solid $color-primary; 
+        }
+    }
+
+    &-label {
+        font-weight: 500;
+        margin-bottom: $grid-8;
+
+        &:focus {
+            border: 1px solid $color-primary; 
+        }
+
+        @media screen and (max-width: $dft-width-sm) {
+            font-size: $font-size-smaller;
+        }
+    }
+
+    &-title {
+        display: inline-block;
+        font-weight: 500;
+        letter-spacing: 0.02em;
+        color: $color-primary;
+        text-transform: uppercase;
+
+        @media screen and (max-width: $dft-width-sm) {
+            font-size: $font-size-smaller;
+        }
+    }
+
+    // &-bold {
+    //    font-weight: 600;
+    //    color: $color-primary;
+    // }
+}

@@ -1,0 +1,70 @@
+.services {
+    &__header {
+        text-align: center;
+
+        > * {
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        > p {
+            max-width: 500px;
+        }
+    }
+
+    &__body {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        margin-right: -$grid-16;
+        margin-left: -$grid-16;
+
+        @media screen and (max-width: 900px) {
+            flex-direction: column;
+            align-items: center;
+        }
+    }
+}
+
+.service {
+    margin-right: $grid-16;
+    margin-left: $grid-16;
+    max-width: 500px;
+    flex-basis: 334px;
+    flex-grow: 1;
+    padding: $grid-32;
+    text-align: center;
+    border-radius: $grid-24;
+    box-shadow: 0px 11px 28px 1px rgba(38, 33, 58, 0.04);
+
+    &__icon {
+        margin: auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 80px;
+        height: 80px;
+        border-radius: 50%;
+        background-color: blue;
+
+        > i {
+            font-size: 28px;
+        }
+
+        @media screen and (max-width: $dft-width-sm) {
+            width: 55px;
+            height: 55px;
+        }
+    }
+
+    &:nth-child(1) { .service__icon { background-color: #FEF1F2; color: #F5818C; } }
+    &:nth-child(5) { .service__icon { background-color: #EBFBFF; color: #04D2FC; } }
+    &:nth-child(2) { .service__icon { background-color: #F3EFFF; color: #6F3CFF; } }
+    &:nth-child(3) { .service__icon { background-color: #F0FBF7; color: #47D39B; } }
+    &:nth-child(4) { .service__icon { background-color: #FDF5F2; color: #FFA05C; } }
+    &:nth-child(6) { .service__icon { background-color: rgba(12, 125, 255, 0.1); color: #0C7DFF; } }
+
+    @media screen and (max-width: 900px) {
+        flex-basis: 0;
+    }
+}

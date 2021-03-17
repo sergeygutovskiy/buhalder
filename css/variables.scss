@@ -1,0 +1,71 @@
+// colors
+$color-primary: #0C7DFF;
+$color-secondary: #F6FAFF;
+$color-font-primary: #25406B;
+$color-font-secondary: #66738F;
+$color-border: #D6DBED;
+
+// <h> font sizes
+$font-size-h1: 3.125rem;
+$font-size-h2: 2.5rem;
+$font-size-h2-sm: 1.5rem;
+$font-size-h3: 2.1875rem;
+$font-size-h3-sm: 1.5rem;
+// bigger font sizes
+$font-size-bigger: 1.25rem;
+$font-size-biggest: 1.5rem;
+// smaller font sizes
+$font-size-smaller: 0.875rem;
+$font-size-smallest: 0.75rem;
+
+// <h> line heights
+$line-height-h1: 4rem;
+$line-height-h2: 3rem;
+$line-height-h2-sm: 2.125rem;
+$line-height-h3: 3rem;
+$line-height-h3-sm: 2.125rem;
+// <p> line hrights
+$line-height-p: 1.75rem;
+$line-height-p-sm: 1.5625rem;
+// smaller font sizes
+$line-height-smaller: 1.5rem;
+$line-height-smallest: 1.125rem;
+
+// borders
+$border-radius-sm: 20px;
+
+// grid values
+$grid-120: 120px;
+$grid-96: 96px;
+$grid-64: 64px;
+$grid-48: 48px;
+$grid-32: 32px;
+$grid-24: 24px;
+$grid-16: 16px;
+$grid-8: 8px;
+$grid-4: 4px;
+
+// device sizes
+$dft-width-lg: 1420px + $grid-48 * 2;
+$dft-width-sm: 500px + $grid-24 * 2;
+
+@mixin font-smaller {
+    font-size: $font-size-smaller;
+    line-height: $line-height-smaller;
+}
+
+@mixin font-smallest {
+    font-size: $font-size-smallest;
+    line-height: $line-height-smallest;
+}
+
+@mixin flex-between {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+@mixin media_margin($margin-property, $margin, $media, $margin-mobile) {
+    #{$margin-property}: $margin; 
+    @media screen and (max-width: $media) { #{$margin-property}: $margin-mobile; }
+}

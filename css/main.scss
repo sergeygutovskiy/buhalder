@@ -1,0 +1,93 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    outline: none;
+}
+
+html {
+    font-family: "Noto Sans";
+    font-size: 100%;
+    font-weight: 400;
+    color: $color-font-primary;
+}
+
+body {
+    margin: 0;
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    display: inline-block;
+}
+
+h1 {
+    font-size: $font-size-h1;
+    line-height: $line-height-h1;
+    font-weight: 600;
+}
+
+h2 {
+    font-family: "Source Sans Pro", sans-serif;
+    font-size: $font-size-h2;
+    line-height: $line-height-h2;
+    font-weight: 600;
+
+    @media screen and (max-width: $dft-width-sm) {
+        font-size: $font-size-h2-sm;
+        line-height: $line-height-h2-sm;
+    }
+}
+
+h3 {
+    font-size: $font-size-h3;
+    line-height: $line-height-h3;
+    font-weight: 600;
+
+    @media screen and (max-width: $dft-width-sm) {
+        font-size: $font-size-h3-sm;
+        line-height: $line-height-h3-sm;
+    }
+}
+
+h4 {
+    font-size: $font-size-bigger;
+    font-weight: 600;
+    color: $color-primary;
+}
+
+a {
+    text-decoration: none;
+
+    // &:-webkit-any-link {
+    //    color: unset;
+    // }
+}
+
+p {
+    color: $color-font-secondary;
+    line-height: $line-height-p;
+
+    @media screen and (max-width: $dft-width-sm) {
+        font-size: $font-size-smaller;
+        line-height: $line-height-p-sm;
+    }
+}
+
+textarea {
+    resize: vertical;
+    font-family: "Noto Sans";
+}
+
+button {
+    font-family: "Noto Sans";
+    font-size: 100%;
+}
+
+button:hover {
+    cursor: pointer;
+}
