@@ -25,17 +25,19 @@ h1, h2, h3, h4, h5, h6 {
     display: inline-block;
 }
 
+h1, h2, h3, h4 {
+    font-weight: 600;
+}
+
 h1 {
     font-size: $font-size-h1;
     line-height: $line-height-h1;
-    font-weight: 600;
 }
 
 h2 {
     font-family: "Source Sans Pro", sans-serif;
     font-size: $font-size-h2;
     line-height: $line-height-h2;
-    font-weight: 600;
 
     @media screen and (max-width: $dft-width-sm) {
         font-size: $font-size-h2-sm;
@@ -46,7 +48,6 @@ h2 {
 h3 {
     font-size: $font-size-h3;
     line-height: $line-height-h3;
-    font-weight: 600;
 
     @media screen and (max-width: $dft-width-sm) {
         font-size: $font-size-h3-sm;
@@ -56,16 +57,11 @@ h3 {
 
 h4 {
     font-size: $font-size-bigger;
-    font-weight: 600;
-    color: $color-primary;
 }
 
 a {
+    color: $color-font-primary;
     text-decoration: none;
-
-    // &:-webkit-any-link {
-    //    color: unset;
-    // }
 }
 
 p {
@@ -86,8 +82,8 @@ textarea {
 button {
     font-family: "Noto Sans";
     font-size: 100%;
-}
 
-button:hover {
-    cursor: pointer;
+    &:hover {
+        cursor: pointer;
+    }
 }

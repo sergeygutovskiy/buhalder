@@ -1,4 +1,4 @@
-<section class="dft-container dft-mrg_t_120">
+<section class="dft-mrg_t_120 dft-container">
     <div class="calculator">
         <div class="calculator__form">
             <div class="calculator__title">Форма организации</div>
@@ -19,12 +19,10 @@
                 <button class="dft-btn dft-btn_sm dft-btn_secondary">От 3 и более</button>
             </div>
             <div class="calculator__total dft-mrg_t_48">
-                <div class="calculator__price-text"> Стоимость </div>
+                <div class="calculator__price-text">Стоимость</div>
                 <div class="calculator__price">
-                    <h2>
-                        от 10 000
-                    </h2>
-                    <span> ₽/месяц </span>
+                    <h2>от 10 000</h2>
+                    <span>₽/месяц</span>
                 </div>
             </div>
         </div>

@@ -4,52 +4,62 @@
     $switch-to-md: 1160px;
     
     @include flex-between;
+    position: relative;
+    z-index: $z-layer-navigation;
     align-items: center;
     font-weight: 600;
 
     &__logo {
-        img {
-            height: 34px;
+        // img {
+        //    height: 34px;
+        // }
+        &:hover, &:focus {
+            svg {
+                > g {
+                    > path {
+                        fill: $color-primary;
+                    }
+                }
+            }
         }
     }
 
     &__links {
         @include flex-between;
+        position: relative;
         min-width: 500px;
     }
 
     &__link {
-        > a > i {
+        display: block;
+
+        > i {
             position: relative;
             bottom: 1px;
             font-size: .75em;
             margin-left: $grid-4;
         }
 
-        &:hover, &:focus {
-            > a {
-                color: $color-primary;
-            }
-        
-            > a > i {
+        &:hover {        
+            > i {
                 transform: rotateX(180deg);
             }
 
-            > .navigation-dropdown {
-                display: block;
+            + * {
+               display: block; 
             }
         }
     }
 
     &-dropdown {
         position: absolute;
+        top: 100%;
         display: none;
-        padding-top: $grid-24;
         transform: translateX(-40%);
-        max-width: 716px;
-        width: 100%;
+        width: 768px;
 
         &__body {
+            margin-top: $grid-24;
             @include flex-between;
             flex-wrap: wrap;
             padding: $grid-16;
@@ -74,7 +84,7 @@
                 font-weight: 400;
             }
 
-            &:hover {
+            &:hover, &:focus {
                 background-color: #F6FAFF;
                 span {
                     color: $color-primary;
@@ -99,16 +109,24 @@
             &[data-index="3"] { background-color: #FDF5F2; color: #FFA05C; }
             &[data-index="5"] { background-color: rgba(12, 125, 255, 0.1); color: #0C7DFF; }
         }
+
+        &.active {
+            display: block;
+        }
+
+        &:hover {
+            display: block;
+        }
     }
 
     &__phone {
         align-self: baseline;
         color: $color-primary;
-        font-size: 1.25rem;
 
         i {
             margin-right: $grid-8;
             font-size: 0.8em;
+            color: inherit;
         }
     }
 

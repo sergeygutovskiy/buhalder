@@ -41,29 +41,10 @@
 
     &__paragraph {
         @include font-smaller;
-
-        a {
-            font-weight: 600;
-            color: $color-font-primary;
-
-            &:hover {
-                color: $color-primary;
-            }
-        }
     }
 
     &__link {
         @include font-smaller;
-        /* margin-top: $grid-16; */
-        font-weight: 600;
-
-        &:first-of-type {
-            margin-top: 0;
-        }
-
-        &:hover {
-            color: $color-primary;
-        }
     }
 
     &__bottom {
@@ -84,10 +65,6 @@
         > div {
             > a {
                 font-weight: 600;
-            
-                &:hover {
-                    color: $color-primary;
-                }
             }
 
             @media screen and (max-width: $media-less-copy-text) {

@@ -116,26 +116,29 @@ for (let i = 0; i < calc_btn_groups.length; i++)
     }
 }
 
-// for (let i = 0; i < calc_btn_groups.length; i++)
-// {
-//    for (let j = 0; j < calc_btn_groups[i].children.length; j++)
-//    {
-//        calc_btn_groups[i].childNodes[j * 2 + 1].addEventListener("click", function() {
-//            if (this.classList.contains("active")) return;
 //
-//            let temp = Array.prototype.slice.call( calc_btn_groups);
-//            let index = temp.indexOf( this.parentElement);
-//            
-//            for (let k = 0; k < calc_btn_groups[index].childNodes.length; k++)
-//            {
-//                if (k * 2 + 1 == j * 2 + 1) continue;
-//                else if (calc_btn_groups[index].childNodes[k * 2 + 1].classList.contains("active"))
-//                {
-//                    calc_btn_groups[index].childNodes[k * 2 + 1].classList.remove("active");
-//                    this.classList.add("active");
-//                    break;
-//                }
-//            }
-//        });
-//    }
-// }
+
+let dropdown_toggles = document.querySelectorAll("[data-toggle]");
+// let dropdowns = document.querySelectorAll("[data-dropdown]");
+
+for (let i = 0; i < dropdown_toggles.length; i++)
+{
+    let toggle = dropdown_toggles[i];
+    let dropdown = document.querySelectorAll("[data-dropdown='" + toggle.dataset.toggle + "']")[0];
+    
+    toggle.addEventListener("focus", function(event) {
+        dropdown.classList.add("active");
+    });
+
+    toggle.addEventListener("keydown", function(event) {
+        if (event.shiftKey && event.keyCode == 9) {
+            dropdown.classList.remove("active");
+        }
+    });
+
+    dropdown.getElementsByTagName("a")[dropdown.getElementsByTagName("a").length - 1].addEventListener("keydown", function(event) {
+        if (event.keyCode == 9) {
+            dropdown.classList.remove("active");
+        }
+    });
+}

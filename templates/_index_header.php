@@ -1,8 +1,6 @@
-<section class="dft-container dft-mrg_t_64 dft-mrg_b_64">
+<section class="dft-mrg_t_64 dft-mrg_b_64 dft-container">
     <div class="main-header">
-        <h1>
-            Аутсорсинг бухгалтерского учёта
-        </h1>
+        <h1>Аутсорсинг бухгалтерского учёта</h1>
         <p class="dft-mrg_t_24">
             Полный или частичный учет бухгалтерии для организаций малого и среднего бизнеса
         </p>

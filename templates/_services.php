@@ -1,4 +1,4 @@
-<section class="dft-container dft-mrg_t_120">
+<section class="dft-mrg_t_120 dft-container">
     <header class="services__header">
         <div class="dft-title">Услуги</div>
         <br>

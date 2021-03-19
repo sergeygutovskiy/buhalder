@@ -49,6 +49,9 @@ $grid-4: 4px;
 $dft-width-lg: 1420px + $grid-48 * 2;
 $dft-width-sm: 500px + $grid-24 * 2;
 
+// z indexes
+$z-layer-navigation: 1;
+
 @mixin font-smaller {
     font-size: $font-size-smaller;
     line-height: $line-height-smaller;

@@ -53,23 +53,37 @@
         }
     }
 
-    &-block-pd {
-        &_left {
-            padding-left: $grid-32;
-        }
+    &-block {
+        &-pd {
+            &_left {
+                padding-left: $grid-32;
+            }
 
-        &_right {
-            padding-right: $grid-32;
+            &_right {
+                padding-right: $grid-32;
+            }
         }
     }
 
-    &-text-pd {
-        &_left {
-            padding-left: $grid-8;
+    &-text {
+        &-pd {
+            &_left {
+                padding-left: $grid-8;
+            }
+
+            &_right {
+                padding-right: $grid-8;
+            }
         }
 
-        &_right {
-            padding-right: $grid-8;
+        &-bold {
+            font-weight: 600;
+        }
+    }
+
+    &-color {
+        &_primary {
+            color: $color-primary;
         }
     }
 
@@ -111,33 +125,35 @@
         }
     }
 
-    &-form-group {
-        display: flex;
-        flex-direction: column;
-    }
-
-    &-input {
-        padding: $grid-16 $grid-24;
-        border: 1px solid $color-border; 
-        border-radius: 12px;
-        font-size: 100%;
-        color: $color-font-secondary;
-
-        &:focus {
-            border: 1px solid $color-primary; 
-        }
-    }
-
-    &-label {
-        font-weight: 500;
-        margin-bottom: $grid-8;
-
-        &:focus {
-            border: 1px solid $color-primary; 
+    &-form {
+        &-group {
+            display: flex;
+            flex-direction: column;
         }
 
-        @media screen and (max-width: $dft-width-sm) {
-            font-size: $font-size-smaller;
+        &-input {
+            padding: $grid-16 $grid-24;
+            border: 1px solid $color-border; 
+            border-radius: 12px;
+            font-size: 100%;
+            color: $color-font-secondary;
+
+            &:focus {
+                border: 1px solid $color-primary; 
+            }
+        }
+
+        &-label {
+            font-weight: 500;
+            margin-bottom: $grid-8;
+
+            &:focus {
+                border: 1px solid $color-primary; 
+            }
+
+            @media screen and (max-width: $dft-width-sm) {
+                font-size: $font-size-smaller;
+            }
         }
     }
 
@@ -153,8 +169,25 @@
         }
     }
 
-    // &-bold {
-    //    font-weight: 600;
-    //    color: $color-primary;
-    // }
+    &-link {
+        color: $color-primary;
+        border-bottom: solid 0.1em transparent;
+
+        &:hover, &:focus {
+            border-bottom: solid 0.1em $color-primary;
+        }
+
+        &:hover {
+            cursor: pointer;
+        }
+
+        &_secondary {
+            color: $color-font-primary;
+
+            &:hover, &:focus {
+                border-bottom: solid 0.1em transparent;
+                color: $color-primary;
+            }
+        }
+    }
 }
