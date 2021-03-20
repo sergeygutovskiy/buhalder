@@ -1,0 +1,62 @@
+.buh-services {
+    max-width: 1200px;
+    text-align: center;
+
+    h3 {
+        max-width: 750px;
+    }
+
+    &__nav {
+        display: flex;
+        justify-content: space-between;
+
+        @media screen and (max-width: 900px) {
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+    }
+
+    &__body {
+        @include flex-between;
+        align-items: center;
+    }
+
+    &__slider-wrapper {
+        max-width: 580px;
+        width: 100%;
+
+        @media screen and (max-width: 1076px) {
+            margin: -$grid-64;
+            max-width: 580px + $grid-64 * 2;
+        }
+    }
+
+    &__slider {
+        width: 100%;
+    }
+
+    &__slide {
+        display: flex;
+        flex-direction: column;
+
+        @media screen and (max-width: 1076px) {
+            padding: $grid-64;
+        }
+    }
+
+    &__item {
+        padding: $grid-24 $grid-32;
+        text-align: left;
+        border-radius: $border-radius-sm;
+
+        @media screen and (max-width: 1076px) {
+            box-shadow: 7px 7px 60px #F2F3F6;
+        }
+    }
+
+    &__image {
+        @media screen and (max-width: 1076px) {
+            display: none;
+        }
+    }
+}

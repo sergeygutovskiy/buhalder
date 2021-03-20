@@ -19,6 +19,7 @@
             &_32  { @include media_margin(margin-top, $grid-32,  $dft-width-sm, $grid-24) }
             &_24  { @include media_margin(margin-top, $grid-24,  $dft-width-sm, $grid-16) }
             &_16  { @include media_margin(margin-top, $grid-16,  $dft-width-sm, $grid-8 ) }
+            &_8  { @include media_margin(margin-top, $grid-8,  $dft-width-sm, $grid-8 ) }
         }
 
         &_b {
@@ -28,6 +29,7 @@
             &_32  { @include media_margin(margin-bottom, $grid-32,  $dft-width-sm, $grid-24) }
             &_24  { @include media_margin(margin-bottom, $grid-24,  $dft-width-sm, $grid-16) }
             &_16  { @include media_margin(margin-bottom, $grid-16,  $dft-width-sm, $grid-8 ) }
+            &_8  { @include media_margin(margin-bottom, $grid-8,  $dft-width-sm, $grid-8 ) }
         }
     }
 
@@ -40,6 +42,7 @@
                 &_32  { @include media_margin(margin-top, -$grid-32,  $dft-width-sm, -$grid-24) }
                 &_24  { @include media_margin(margin-top, -$grid-24,  $dft-width-sm, -$grid-16) }
                 &_16  { @include media_margin(margin-top, -$grid-16,  $dft-width-sm, -$grid-8 ) }
+                &_8  { @include media_margin(margin-top, -$grid-8,  $dft-width-sm, -$grid-8 ) }
             }
     
             &_b {
@@ -49,6 +52,7 @@
                 &_32  { @include media_margin(margin-bottom, -$grid-32,  $dft-width-sm, -$grid-24) }
                 &_24  { @include media_margin(margin-bottom, -$grid-24,  $dft-width-sm, -$grid-16) }
                 &_16  { @include media_margin(margin-bottom, -$grid-16,  $dft-width-sm, -$grid-8 ) }
+                &_8  { @include media_margin(margin-bottom, -$grid-8,  $dft-width-sm, -$grid-8 ) }
             }
         }
     }
@@ -111,6 +115,24 @@
 
             &:hover, &:focus {
                 border: solid 1px $color-primary;
+            }
+        }
+
+        &_trans {
+            border: none;
+            padding: $grid-16 $grid-24;
+            background-color: white;
+            font-weight: 600;
+            color: $color-font-primary;
+
+            &:hover, &:focus {
+                border: none;
+                color: $color-primary;
+            }
+
+            &.active {
+                background-color: #E8F2FE;
+                color: $color-primary;
             }
         }
 

@@ -58,7 +58,6 @@
                 <path d="M28.1851 1.43478C28.0007 1.13789 27.6763 0.957031 27.3263 0.957031H22.2784C21.7204 0.957031 21.2688 1.40726 21.2688 1.96366C21.2688 2.52006 21.7204 2.97029 22.2784 2.97029H23.3217L15.2113 7.32463L0.531747 15.1698C0.0407532 15.4342 -0.143597 16.0446 0.120644 16.5332C0.387107 17.027 1.00295 17.2039 1.48809 16.9431L15.2113 9.61142L24.997 4.35769L24.4041 5.53994C24.1546 6.03735 24.3567 6.64193 24.8556 6.89064C25.3591 7.13981 25.9619 6.93439 26.2103 6.4404L28.2294 2.41389C28.3862 2.10224 28.3694 1.73167 28.1851 1.43478V1.43478Z" fill="#0C7DFF"/>
                 <path d="M24.4037 5.53994C24.1542 6.03735 24.3563 6.64193 24.8552 6.89063C25.3587 7.13981 25.9614 6.93439 26.2099 6.4404L28.229 2.41389C28.3858 2.10224 28.369 1.73167 28.1847 1.43478C28.0003 1.13789 27.6759 0.957031 27.3259 0.957031H22.278C21.72 0.957031 21.2684 1.40726 21.2684 1.96366C21.2684 2.52006 21.72 2.97029 22.278 2.97029H23.3212L15.2109 7.32463V9.61142L24.9966 4.35769L24.4037 5.53994Z" fill="#0C7DFF"/>
             </svg>
-
         </a>
         <nav class="navigation__links">
             <div class="navigation__link dft-link dft-link_secondary" href="/" tabindex="0" data-toggle="nav-dropdown">
@@ -160,95 +159,12 @@
                         <span></span>
                     </div>
                 </div>
-            </div>
-            <div class="navigation_md__links">
-                <div class="navigation__link navigation_md__link navigation_md__link_services">
-                    <a href="">
-                        Услуги
-                        <i class="fas fa-chevron-down"></i>
-                    </a>
-                </div>
-                <div class="navigation_md-dropdown">
-                    <div class="navigation-dropdown__body navigation_md-dropdown__body">
-                        <a class="navigation-dropdown__item navigation_md-dropdown__item" href="">
-                            <div class="navigation-dropdown__image-wrapper" data-index="0">
-                                <i class="fas fa-chart-line"></i>
-                            </div>
-                            <div>
-                                <span>Бухгалтерский учет</span>
-                                <p>
-                                    Сопровождение бухгалтерии и отдела кадров предприятий
-                                </p>
-                            </div>
-                        </a>
-                        <a class="navigation-dropdown__item navigation_md-dropdown__item" href="">
-                            <div class="navigation-dropdown__image-wrapper" data-index="1">
-                                <i class="fas fa-money-bill-wave"></i>
-                            </div>
-                            <div>
-                                <span>Зарплата и кадры</span>
-                                <p>
-                                    Кадровое делопроизводство с нуля, учет и начисление зарплаты
-                                </p>
-                            </div>
-                        </a>
-                        <a class="navigation-dropdown__item navigation_md-dropdown__item" href="">
-                            <div class="navigation-dropdown__image-wrapper" data-index="2">
-                                <i class="fas fa-undo-alt"></i>
-                            </div>
-                            <div>
-                                <span>Восстановление учёта и отчетности</span>
-                                <p>
-                                    Восстановим бухгалтерский учёт и отчетность в любом состоянии
-                                </p>
-                            </div>
-                        </a>
-                        <a class="navigation-dropdown__item navigation_md-dropdown__item" href="">
-                            <div class="navigation-dropdown__image-wrapper" data-index="3">
-                                <i class="fas fa-question"></i>
-                            </div>
-                            <div>
-                                <span>Консультация бухгалтера</span>
-                                <p>
-                                    Консультация главного бухгалтера для руководителей предприятий
-                                </p>
-                            </div>
-                        </a>
-                        <a class="navigation-dropdown__item navigation_md-dropdown__item" href="">
-                            <div class="navigation-dropdown__image-wrapper" data-index="4">
-                                <i class="fas fa-paste"></i>
-                            </div>
-                            <div>
-                                <span>Нулевая отчетность</span>
-                                <p>
-                                    Подготовим и сдадим нулевую отчетность в ИФНС и ПФР
-                                </p>
-                            </div>
-                        </a>
-                        <a class="navigation-dropdown__item navigation_md-dropdown__item" href="">
-                            <div class="navigation-dropdown__image-wrapper" data-index="5">
-                                <i class="fas fa-check"></i>
-                            </div>
-                            <div>
-                                <span>Регистрация ООО</span>
-                                <p>
-                                    Регистрация, внесение изменений и ликвидация ООО с внесением в ЕГРЮЛ
-                                </p>
-                            </div>
-                        </a>
-                    </div>
-                </div>
-                <div class="navigation__link navigation_md__link">
-                    <a href="">Тарифы</a>
-                </div>
-                <div class="navigation__link navigation_md__link">
-                    <a href="">Блог</a>
-                </div>
-                <div class="navigation__link navigation_md__link">
-                    <a href="">О нас</a>
-                </div>
-                <div class="navigation__link navigation_md__link">
-                    <a href="">Контакты</a>
+                <div class="navigation_md__links">
+                    <a class="navigation_md__link dft-link dft-link_secondary" href="">Услуги</a>
+                    <a class="navigation_md__link dft-mrg_t_48 dft-link dft-link_secondary" href="">Тарифы</a>
+                    <a class="navigation_md__link dft-mrg_t_48 dft-link dft-link_secondary" href="">Блог</a>
+                    <a class="navigation_md__link dft-mrg_t_48 dft-link dft-link_secondary" href="">О нас</a>
+                    <a class="navigation_md__link dft-mrg_t_48 dft-link dft-link_secondary" href="">Контакты</a>
                 </div>
             </div>
         </div>

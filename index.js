@@ -1,18 +1,12 @@
 let nav_btn = document.getElementsByClassName("navigation-btn")[0];
 let nav_md_links = document.getElementsByClassName("navigation_md__links")[0];
-let nav_md_services_dropdown_btn = document.getElementsByClassName("navigation_md__link_services")[0];
-let nav_md_services_dropdown = document.getElementsByClassName("navigation_md-dropdown")[0];
 
 nav_btn.addEventListener("click", function() {
     this.classList.toggle("navigation-btn--active");
-    nav_md_links.classList.toggle("navigation_md__links--active");
+    nav_md_links.classList.toggle("active");
 });
 
-nav_md_services_dropdown_btn.addEventListener("click", function(e) {
-    e.preventDefault();
-    nav_md_services_dropdown.classList.toggle("navigation_md-dropdown--active");
-});
-
+// 
 
 const prices = [
     // 2 options
@@ -119,7 +113,6 @@ for (let i = 0; i < calc_btn_groups.length; i++)
 //
 
 let dropdown_toggles = document.querySelectorAll("[data-toggle]");
-// let dropdowns = document.querySelectorAll("[data-dropdown]");
 
 for (let i = 0; i < dropdown_toggles.length; i++)
 {
@@ -142,3 +135,26 @@ for (let i = 0; i < dropdown_toggles.length; i++)
         }
     });
 }
+
+//
+
+let buh_services_nav = document.getElementsByClassName("buh-services__nav")[0];
+let buh_services_active_btn_index = 0;
+
+function buh_services_btn_click(index)
+{
+    buh_services_nav.childNodes[buh_services_active_btn_index * 2 + 1].classList.remove("active");
+
+    buh_services_active_btn_index = index;
+    buh_services_nav.childNodes[buh_services_active_btn_index * 2 + 1].classList.add("active");
+
+    buh_services_slider.go(buh_services_active_btn_index);
+}
+
+let buh_services_slider = new Splide(".buh-services__slider", {
+    perPage: 1,
+    type: "fade",
+    arrows: false,
+    pagination: false,
+    fixedHeight: "500px"
+}).mount();

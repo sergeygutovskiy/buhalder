@@ -32,6 +32,16 @@ h1, h2, h3, h4 {
 h1 {
     font-size: $font-size-h1;
     line-height: $line-height-h1;
+
+    @media screen and (max-width: $dft-width-md) {
+        font-size: $font-size-h1-md;
+        line-height: $line-height-h1-md;
+    }
+
+    @media screen and (max-width: $dft-width-sm) {
+        font-size: $font-size-h1-sm;
+        line-height: $line-height-h1-sm;
+    }
 }
 
 h2 {
@@ -56,7 +66,11 @@ h3 {
 }
 
 h4 {
-    font-size: $font-size-bigger;
+    font-size: $font-size-h4;
+
+    @media screen and (max-width: $dft-width-sm) {
+        font-size: $font-size-h4-sm;
+    }
 }
 
 a {
@@ -86,4 +100,8 @@ button {
     &:hover {
         cursor: pointer;
     }
+}
+
+iframe {
+    border: none;
 }
