@@ -1,4 +1,4 @@
-<section class="dft-mrg_t_64 dft-mrg_b_64 dft-container">
+<section class="dft-mrg_t_64 dft-container">
     <div class="main-header">
         <h1>Аутсорсинг бухгалтерского учёта</h1>
         <p class="dft-mrg_t_24">

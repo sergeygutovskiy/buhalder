@@ -8,9 +8,6 @@
         <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@600&display=swap" rel="stylesheet">
         
         <link rel="stylesheet" href="css/min/bundle.css">
-    
-        <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@latest/dist/js/splide.min.js"></script>
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@latest/dist/css/splide-core.min.css">
     </head>    
     <body>
         <?php require "templates/_header.php"; ?>

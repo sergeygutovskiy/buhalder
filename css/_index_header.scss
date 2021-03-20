@@ -1,5 +1,5 @@
 .main-header {
-    margin: 0 $grid-32;
+    margin-bottom: 140px;
     position: relative;
     padding: $grid-64 $grid-32;
     height: 470px;
@@ -26,13 +26,14 @@
         &:nth-child(7) { left: 0;   top: 0;    transform: translate(-20%, 65%); width: 220px; }
         &:nth-child(8) { right: 0;  top: 0;    transform: translate(20%,  65%); width: 220px; }
     
-        @media screen and (max-width: 1240px) {
+        @media screen and (max-width: 1296px) {
             display: none;
         } 
     }
 
-    @media screen and (max-width: 1240px) {
+    @media screen and (max-width: 1296px) {
         height: auto;
+        margin-bottom: 0;
     }
 
     @media screen and (max-width: $dft-width-sm) {

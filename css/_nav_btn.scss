@@ -6,6 +6,12 @@
     border-radius: $grid-16;
     background-color: $color-secondary;
 
+    @media screen and (max-width: $dft-width-sm) {
+        background-color: transparent;
+        width: $grid-24;
+        height: $grid-16;
+    }
+
     > div {
         width: $grid-24;
         height: $grid-16;

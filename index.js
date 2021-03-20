@@ -1,3 +1,29 @@
+// 
+
+function hasTouch() {
+    return 'ontouchstart' in document.documentElement
+        || navigator.maxTouchPoints > 0
+        || navigator.msMaxTouchPoints > 0;
+}
+
+if (hasTouch()) {       // remove all the :hover stylesheets
+    try {               // prevent exception on browsers not supporting DOM styleSheets properly
+        let styleSheet = document.styleSheets[2];
+
+        for (let ri = styleSheet.rules.length - 1; ri >= 0; ri--) {
+            if (!styleSheet.rules[ri].selectorText) continue;
+
+            if (styleSheet.rules[ri].selectorText.match(':hover')) {
+                styleSheet.deleteRule(ri);
+            }
+        }
+    } catch (ex) {
+        console.log(ex);
+    }
+}
+
+  //
+
 let nav_btn = document.getElementsByClassName("navigation-btn")[0];
 let nav_md_links = document.getElementsByClassName("navigation_md__links")[0];
 
@@ -139,22 +165,16 @@ for (let i = 0; i < dropdown_toggles.length; i++)
 //
 
 let buh_services_nav = document.getElementsByClassName("buh-services__nav")[0];
+let buh_services_slider = document.getElementsByClassName("buh-services__slider")[0];
 let buh_services_active_btn_index = 0;
 
 function buh_services_btn_click(index)
 {
     buh_services_nav.childNodes[buh_services_active_btn_index * 2 + 1].classList.remove("active");
+    buh_services_slider.childNodes[buh_services_active_btn_index * 2 + 1].classList.remove("active");
 
     buh_services_active_btn_index = index;
-    buh_services_nav.childNodes[buh_services_active_btn_index * 2 + 1].classList.add("active");
-
-    buh_services_slider.go(buh_services_active_btn_index);
+    
+    buh_services_nav.childNodes[index * 2 + 1].classList.add("active");
+    buh_services_slider.childNodes[index * 2 + 1].classList.add("active");
 }
-
-let buh_services_slider = new Splide(".buh-services__slider", {
-    perPage: 1,
-    type: "fade",
-    arrows: false,
-    pagination: false,
-    fixedHeight: "500px"
-}).mount();

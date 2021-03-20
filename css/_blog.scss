@@ -81,5 +81,9 @@
     &__bottom-link {
         margin-top: auto;
         opacity: 0;
+
+        @media screen and (max-width: $dft-width-sm) {
+            opacity: 1;
+        }
     }
 }

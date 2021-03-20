@@ -136,14 +136,18 @@
             }
         }
 
+        @media screen and (max-width: $dft-width-sm) {
+            font-size: $font-size-smaller;
+            padding: $grid-16;
+        }
+
         &_sm {
             font-size: $font-size-smaller;
             padding: $grid-16 $grid-32;
-        }
 
-        @media screen and (max-width: $dft-width-sm) {
-            font-size: $font-size-smallest;
-            padding: $grid-16;
+            @media screen and (max-width: $dft-width-sm) {
+                font-size: $font-size-smallest;
+            }
         }
     }
 

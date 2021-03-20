@@ -5,6 +5,7 @@
     padding: 0;
     margin: 0;
     outline: none;
+    -webkit-tap-highlight-color: transparent;
 }
 
 html {
@@ -59,6 +60,11 @@ h3 {
     font-size: $font-size-h3;
     line-height: $line-height-h3;
 
+    @media screen and (max-width: $dft-width-md) {
+        font-size: $font-size-h3-md;
+        line-height: $line-height-h3-md;
+    }
+
     @media screen and (max-width: $dft-width-sm) {
         font-size: $font-size-h3-sm;
         line-height: $line-height-h3-sm;
@@ -70,6 +76,7 @@ h4 {
 
     @media screen and (max-width: $dft-width-sm) {
         font-size: $font-size-h4-sm;
+        line-height: $line-height-h4-sm;
     }
 }
 
