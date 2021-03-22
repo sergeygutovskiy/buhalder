@@ -1,0 +1,106 @@
+.questions {
+    text-align: center;
+
+    &__body {
+        position: relative;
+        margin: 0 auto;
+        max-width: 920px;
+        width: 100%;
+        padding: 0 4%;
+        background-color: white;
+
+        @media screen and (max-width: $dft-width-sm) {
+            padding: 0;
+        }
+    }
+}
+
+.question {
+    position: relative;
+    background-color: white;
+    text-align: left;
+    border: solid 1px transparent;
+    border-radius: $border-radius-sm;
+    box-shadow: 7px 7px 60px #F2F3F6;
+
+    &:hover {
+        border: solid 1px $color-primary;
+    }
+
+    .active &__title {
+        color: $color-primary;
+        > h4 {
+            > i {
+                transform: rotate(180deg);
+                color: $color-font-primary;
+            }
+        }  
+    }
+
+    &__title {
+        display: block;
+        padding: $grid-32 $grid-48;
+
+        @media screen and (max-width: $dft-width-sm) {
+            padding: $grid-24;
+        }
+
+        > h4 {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            width: 100%;
+            font-weight: 400;
+
+            > i {
+                margin-top: 6px;
+                margin-left: $grid-24;
+            }
+        }
+
+        &:hover {
+            cursor: pointer;
+
+            > h4 {
+                > i {
+                    color: $color-primary;
+                }
+            }
+        }
+    }
+
+    &__body {
+        padding: 0 $grid-48;
+        padding-bottom: $grid-32;
+
+        @media screen and (max-width: $dft-width-sm) {
+            padding: 0 $grid-24;
+            padding-bottom: $grid-24;
+        }
+
+        &-wrapper {
+            max-height: 0;
+            overflow: hidden;
+        }
+    }
+
+    .active &__body {
+        &-wrapper {
+            max-height: 1000px;
+        }
+    }
+
+    &-background {
+        position: absolute;
+        left: 0;
+        margin-top: $grid-32;
+        width: 100%;
+        height: 540px;
+        background-color: $color-secondary;
+        border-radius: 40px;
+
+        @media screen and (max-width: $dft-width-sm) {
+            display: none;
+        }
+    }
+}

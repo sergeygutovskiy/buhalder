@@ -7,6 +7,9 @@
         <link rel="preconnect" href="https://fonts.gstatic.com">
         <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@600&display=swap" rel="stylesheet">
         
+        <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+        <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
         <link rel="stylesheet" href="css/min/bundle.css">
     </head>    
     <body>
@@ -17,7 +20,10 @@
         <?php require "templates/_buh_services.php"; ?>
         <?php require "templates/_services.php"; ?>
         <?php require "templates/_calculator.php"; ?>
+        <?php require "templates/_comments.php"; ?>
+        <?php require "templates/_serts.php"; ?>
         <?php require "templates/_blog.php"; ?>
+        <?php require "templates/_questions.php"; ?>
         <?php require "templates/_feedback_form.php"; ?>
 
         <?php require "templates/_footer.php"; ?>

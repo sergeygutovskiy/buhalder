@@ -2,7 +2,7 @@
     <div class="dft-title">Блог</div>
     <div class="blog-title">
         <h3 class="dft-mrg_t_32 dft-text-pd_right">
-            Lorem ipsum dolor
+            Читайте статьи наших специалистов
         </h3>
         <a class="dft-mrg_t_32 dft-btn dft-btn_secondary" href="">
             Перейти на страницу

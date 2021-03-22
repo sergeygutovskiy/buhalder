@@ -1,0 +1,57 @@
+.serts {
+    text-align: center;
+
+    &__body {
+        position: relative;
+        margin-left: auto;
+        margin-right: auto;
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        max-width: 1100px;
+        width: 100%;
+
+        &-background {
+            position: absolute;
+            z-index: 0;
+            left: 50%;
+            transform: translate(-50%);
+            max-width: 760px;
+            width: 100%;
+            height: 100%;
+            background-color: $color-secondary;
+            border-radius: 40px;
+
+            @media screen and (max-width: $dft-width-sm) {
+                width: 80%;
+            }
+        }
+    }
+}
+
+.sert {
+    position: relative;
+    flex: 25%;
+    padding: $grid-24 $grid-16;
+
+    > img {
+        max-width: 240px;
+    }
+
+    @media screen and (max-width: $dft-width-sm) {
+        flex: 50%;
+        padding: $grid-16;
+
+        > img {
+            max-width: 100%;
+        }
+
+        &:nth-of-type(2), &:nth-child(4) {
+            padding-left: 0;
+        }
+
+        &:nth-child(3), &:nth-child(5) {
+            padding-right: 0;
+        }
+    }
+}

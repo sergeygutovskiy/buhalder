@@ -41,10 +41,6 @@
         }
 
         &:hover {        
-            > i {
-                transform: rotateX(180deg);
-            }
-
             + * {
                display: block; 
             }
