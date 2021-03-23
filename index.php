@@ -18,7 +18,9 @@
 
         <?php require "templates/_index_header.php"; ?>
         <?php require "templates/_buh_services.php"; ?>
+        <?php require "templates/_service_main.php"; ?>
         <?php require "templates/_services.php"; ?>
+        <?php require "templates/_work.php"; ?>
         <?php require "templates/_calculator.php"; ?>
         <?php require "templates/_comments.php"; ?>
         <?php require "templates/_serts.php"; ?>

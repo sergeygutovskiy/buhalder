@@ -198,11 +198,103 @@ for (let i = 0; i < question_titles.length; i++)
 
 // 
 
-let comments_slider = new Swiper('.comments__slider', {
+let comments_slider = new Swiper('.comments__slider_lg', {
     slidesPerView: 1,
     spaceBetween: 64,
     centeredSlides: true,
+    centeredSlides: true,
+    speed: 400,
     pagination: {
-        el: ".comments__pagination"
+        el: ".comments__pagination_lg",
+        bulletClass: "dft-pagination__bullet",
+        bulletActiveClass: "active",
+        clickable: true
     }
 });
+
+let comments_slider_md = new Swiper('.comments__slider_md', {
+    slidesPerView: 1,
+    spaceBetween: 64,
+    centeredSlides: true,
+    centeredSlides: true,
+    speed: 400,
+    pagination: {
+        el: ".comments__pagination_md",
+        bulletClass: "dft-pagination__bullet",
+        bulletActiveClass: "active",
+        clickable: true
+    }
+});
+
+// 
+
+let work_steps = document.getElementsByClassName("work-timeline__step");
+let work_step_infos = document.getElementsByClassName("work-timeline__info");
+
+let work_step_info_active_index = 0;
+
+for (let i = 0; i < work_steps.length; i++)
+{
+    let work_step = work_steps[i];
+    let work_step_info = work_step_infos[i];
+
+    work_step.addEventListener("click", function() {
+        this.classList.add("active");
+        work_step_infos[work_step_info_active_index].classList.remove("active");
+        work_step_info_active_index = i;
+        work_step_info.classList.add("active");
+
+        for (let j = 0; j < i; j++)
+        {
+            work_steps[j].classList.add("active");
+        }
+
+        for (let j = work_steps.length - 1; j > i; j--)
+        {
+            work_steps[j].classList.remove("active");
+        }
+    });
+}
+
+//
+
+let service_main_slider = new Swiper('.service-main__slider', {
+    slidesPerView: 1,
+    speed: 400,
+    effect: 'fade',
+    allowTouchMove: false,
+    fadeEffect: {
+        crossFade: true
+    },
+    pagination: {
+        el: ".service-main__pagination",
+        bulletClass: "dft-pagination__bullet",
+        bulletActiveClass: "active",
+    },
+});
+
+let service_main_gallery_slider = new Swiper('.service-main__gallery-slider', {
+    slidesPerView: 2,
+    speed: 400,
+    spaceBetween: 48,
+    allowTouchMove: false,
+    breakpoints: {
+    // when window width is >= 320px
+        900: {
+            slidesPerView: 3,
+        },
+    }
+});
+
+service_main_slider._slidePrev = function() {
+    service_main_slider.slidePrev();
+    service_main_gallery_slider.slidePrev();
+}
+
+service_main_slider._slideNext = function() {
+    service_main_slider.slideNext();
+    service_main_gallery_slider.slideNext();
+}
+
+document.getElementsByClassName("service-main__button_left")[0].addEventListener("click", service_main_slider._slidePrev);
+document.getElementsByClassName("service-main__button_right")[0].addEventListener("click", service_main_slider._slideNext);

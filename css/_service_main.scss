@@ -1,0 +1,83 @@
+.service-main {
+    position: relative;
+    padding-top: $grid-64;
+    padding-bottom: $grid-32;
+
+    &__background {
+        position: absolute;
+        z-index: -1;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 50%;
+        transform: translateX(-50%);
+        background-color: $color-secondary;
+        border-radius: 40px;
+
+        @media screen and (max-width: $dft-width-md) {
+            top: 50%;
+            transform: translate(-50%, -50%);
+            width: 80%;
+            height: 70%;
+        }
+    }
+
+    &__content {
+        @include flex-between;
+        align-items: flex-start;
+    }
+
+    &__info {
+        max-width: 600px;
+    }
+
+    &__body {
+        position: relative;
+        max-width: 580px;
+        width: 100%;
+    }
+
+    &__slider {
+        background-color: white;
+        border-radius: $border-radius-sm;
+    }
+
+    &__slide {
+        padding: $grid-48 $grid-48;
+    }
+
+    &__buttons {
+        position: absolute;
+        right: 0;
+        width: 132px;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__footer {
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    &__gallery-slider {
+        overflow: hidden;
+        border-radius: $border-radius-sm;       
+    } 
+
+    &__gallery-slide {
+        overflow: hidden;
+        border-radius: $border-radius-sm;
+
+        > img {
+            height: 300px;
+            width: 100%;
+            object-fit: cover;
+
+            @media screen and (max-width: $dft-width-md) {
+                height: 240px;
+            }
+        }
+    }
+}

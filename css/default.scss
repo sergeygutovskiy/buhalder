@@ -216,4 +216,53 @@
             }
         }
     }
+
+    &-pagination {
+        position: relative;
+        z-index: 2;
+        margin-left: auto;
+        margin-right: auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        &__button {
+            width: 56px;
+            height: 56px;
+            border: solid 1px $color-border;
+            border-radius: 50%;
+            background-color: white;
+
+            &_right {
+                > img {
+                    transform: rotateZ(180deg);
+                }
+            }
+
+            &:hover {
+                background-color: $color-secondary;
+            }
+        }
+
+        &__bullet {
+            width: 10px;
+            height: 10px;
+            border-radius: 10px;
+            background-color: #E6EAF5;
+            transition: 300ms width linear, 300ms background-color linear;
+
+            &:hover {
+                cursor: pointer;
+            }
+
+            &:not(:last-child) {
+                margin-right: $grid-16;
+            }
+
+            &.active {
+                background-color: #BDC5DA;
+                width: 36px;
+            }
+        }
+    }
 }

@@ -50,11 +50,6 @@
         > i {
             font-size: 28px;
         }
-
-        @media screen and (max-width: $dft-width-sm) {
-            width: 55px;
-            height: 55px;
-        }
     }
 
     &:nth-child(1) { .service__icon { background-color: #FEF1F2; color: #F5818C; } }

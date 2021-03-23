@@ -1,0 +1,8 @@
+.service {
+    &__icon {
+        @media screen and (max-width: $dft-width-sm) {
+            width: 55px;
+            height: 55px;
+        }
+    }
+}

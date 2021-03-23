@@ -82,6 +82,11 @@ $dft-width-sm: 500px + $grid-24 * 2;
 
 $z-layer-navigation: 1;
 
+// transitions
+
+$text-transition: 150ms;
+$dropdown-transition: 500ms;
+
 @mixin font-smaller {
     font-size: $font-size-smaller;
     line-height: $line-height-smaller;

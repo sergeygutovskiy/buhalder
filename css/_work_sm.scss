@@ -1,0 +1,21 @@
+.work {
+    &-timeline {
+        padding: $grid-24 $grid-32;
+        border-radius: $border-radius-sm;
+
+        &__step {
+            flex: 50%;
+
+            > div {
+                &:first-child {
+                    padding-left: 0;
+                }
+
+                &:last-child {
+                    padding-left: 0;
+                    font-size: $font-size-smallest;
+                }
+            }
+        }
+    }
+}

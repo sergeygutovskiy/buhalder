@@ -1,0 +1,20 @@
+.questions {
+    &__body {
+        padding: 0;
+    }
+}
+
+.question {
+    &__title {
+        padding: $grid-24;
+    }
+
+    &__body {
+        padding: 0 $grid-24;
+        padding-bottom: $grid-24;
+    }
+
+    &-background {
+        display: none;
+    }
+}

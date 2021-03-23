@@ -16,6 +16,7 @@
         padding: $grid-32;
         border-radius: $grid-16;
         background-color: white;
+        transition: box-shadow $text-transition linear, border $text-transition linear;
         
         &:hover {
             box-shadow: 0px 11px 34px 1px rgba(38, 33, 58, 0.08);

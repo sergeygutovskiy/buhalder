@@ -8,10 +8,6 @@
         width: 100%;
         padding: 0 4%;
         background-color: white;
-
-        @media screen and (max-width: $dft-width-sm) {
-            padding: 0;
-        }
     }
 }
 
@@ -22,6 +18,7 @@
     border: solid 1px transparent;
     border-radius: $border-radius-sm;
     box-shadow: 7px 7px 60px #F2F3F6;
+    transition: border $text-transition linear;
 
     &:hover {
         border: solid 1px $color-primary;
@@ -41,10 +38,6 @@
         display: block;
         padding: $grid-32 $grid-48;
 
-        @media screen and (max-width: $dft-width-sm) {
-            padding: $grid-24;
-        }
-
         > h4 {
             display: flex;
             justify-content: space-between;
@@ -55,6 +48,7 @@
             > i {
                 margin-top: 6px;
                 margin-left: $grid-24;
+                transition: transform $dropdown-transition cubic-bezier(0, 1, 0, 1), color $text-transition linear;
             }
         }
 
@@ -64,6 +58,7 @@
             > h4 {
                 > i {
                     color: $color-primary;
+                    transition: transform $dropdown-transition ease-in-out;
                 }
             }
         }
@@ -73,20 +68,17 @@
         padding: 0 $grid-48;
         padding-bottom: $grid-32;
 
-        @media screen and (max-width: $dft-width-sm) {
-            padding: 0 $grid-24;
-            padding-bottom: $grid-24;
-        }
-
         &-wrapper {
             max-height: 0;
             overflow: hidden;
+            transition: max-height $dropdown-transition cubic-bezier(0, 1, 0, 1);
         }
     }
 
     .active &__body {
         &-wrapper {
             max-height: 1000px;
+            transition: max-height $dropdown-transition ease-in-out;
         }
     }
 

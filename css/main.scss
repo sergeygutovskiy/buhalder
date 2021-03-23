@@ -89,6 +89,11 @@ h4 {
 a {
     color: $color-font-primary;
     text-decoration: none;
+    transition: 
+        border $text-transition linear, 
+        opacity $text-transition linear, 
+        color $text-transition linear,
+        background-color $text-transition linear;
 }
 
 p {
@@ -109,10 +114,16 @@ textarea {
 button {
     font-family: "Noto Sans";
     font-size: 100%;
-
     &:hover {
         cursor: pointer;
     }
+}
+
+textarea, input, button {
+    transition: 
+        border $text-transition linear, 
+        color $text-transition linear,
+        background-color $text-transition linear;
 }
 
 iframe {
