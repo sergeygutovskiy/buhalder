@@ -11,10 +11,6 @@
 
     &__info {
         max-width: 540px;
-
-        @media screen and (max-width: $dft-width-sm) {
-            padding: 0 $grid-16;
-        }
     }
 
     &__form {
@@ -31,16 +27,5 @@
             position: relative;
             right: 0;
         }
-
-        @media screen and (max-width: $dft-width-sm) {
-            padding: $grid-24;
-            border-radius: $border-radius-sm;
-        }
-    }
-
-    @media screen and (max-width: $dft-width-sm) {
-        padding: $grid-16;
-        padding-bottom: 0;
-        border-radius: $border-radius-sm;
     }
 }

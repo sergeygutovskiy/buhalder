@@ -1,0 +1,14 @@
+.feedback {
+    &__info {
+        padding: 0 $grid-16;
+    }
+
+    &__form {
+        padding: $grid-24;
+        border-radius: $border-radius-sm;
+    }
+
+    padding: $grid-16;
+    padding-bottom: 0;
+    border-radius: $border-radius-sm;
+}

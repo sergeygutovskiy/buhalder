@@ -14,6 +14,8 @@
 @import "_footer";
 
 @media screen and (max-width: $dft-width-sm) {
+    @import "_index_header_sm";
+    @import "_feedback_form_sm";
     @import "_serts_sm";
     @import "_questions_sm";
     @import "_work_sm";

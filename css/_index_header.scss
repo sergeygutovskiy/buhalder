@@ -35,10 +35,4 @@
         height: auto;
         margin-bottom: 0;
     }
-
-    @media screen and (max-width: $dft-width-sm) {
-        margin: 0;
-        padding: $grid-32 $grid-16;
-        border-radius: $border-radius-sm;
-    }
 }

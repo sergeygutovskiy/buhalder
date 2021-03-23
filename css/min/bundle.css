@@ -914,13 +914,6 @@ iframe {
     margin-bottom: 0;
   }
 }
-@media screen and (max-width: 548px) {
-  .main-header {
-    margin: 0;
-    padding: 32px 16px;
-    border-radius: 20px;
-  }
-}
 
 .calculator {
   display: flex;
@@ -1054,11 +1047,6 @@ iframe {
 .feedback__info {
   max-width: 540px;
 }
-@media screen and (max-width: 548px) {
-  .feedback__info {
-    padding: 0 16px;
-  }
-}
 .feedback__form {
   position: absolute;
   right: 48px;
@@ -1073,19 +1061,6 @@ iframe {
   .feedback__form {
     position: relative;
     right: 0;
-  }
-}
-@media screen and (max-width: 548px) {
-  .feedback__form {
-    padding: 24px;
-    border-radius: 20px;
-  }
-}
-@media screen and (max-width: 548px) {
-  .feedback {
-    padding: 16px;
-    padding-bottom: 0;
-    border-radius: 20px;
   }
 }
 
@@ -1113,11 +1088,6 @@ iframe {
   background-color: #F6FAFF;
   border-radius: 40px;
 }
-@media screen and (max-width: 548px) {
-  .serts__body-background {
-    width: 80%;
-  }
-}
 
 .sert {
   position: relative;
@@ -1126,21 +1096,6 @@ iframe {
 }
 .sert > img {
   max-width: 240px;
-}
-@media screen and (max-width: 548px) {
-  .sert {
-    flex: 50%;
-    padding: 16px;
-  }
-  .sert > img {
-    max-width: 100%;
-  }
-  .sert:nth-of-type(2), .sert:nth-child(4) {
-    padding-left: 0;
-  }
-  .sert:nth-child(3), .sert:nth-child(5) {
-    padding-right: 0;
-  }
 }
 
 .blog {
@@ -1696,6 +1651,25 @@ iframe {
 }
 
 @media screen and (max-width: 548px) {
+  .main-header {
+    margin: 0;
+    padding: 32px 16px;
+    border-radius: 20px;
+  }
+
+  .feedback {
+    padding: 16px;
+    padding-bottom: 0;
+    border-radius: 20px;
+  }
+  .feedback__info {
+    padding: 0 16px;
+  }
+  .feedback__form {
+    padding: 24px;
+    border-radius: 20px;
+  }
+
   .serts__body-background {
     width: 80%;
   }
@@ -1743,8 +1717,7 @@ iframe {
     padding-left: 0;
     font-size: 0.75rem;
   }
-}
-@media screen and (max-width: 548px) and (max-width: 548px) {
+
   .service__icon {
     width: 55px;
     height: 55px;
