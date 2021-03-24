@@ -44,22 +44,12 @@ h1 {
         font-size: $font-size-h1-md;
         line-height: $line-height-h1-md;
     }
-
-    @media screen and (max-width: $dft-width-sm) {
-        font-size: $font-size-h1-sm;
-        line-height: $line-height-h1-sm;
-    }
 }
 
 h2 {
     font-family: "Source Sans Pro", sans-serif;
     font-size: $font-size-h2;
     line-height: $line-height-h2;
-
-    @media screen and (max-width: $dft-width-sm) {
-        font-size: $font-size-h2-sm;
-        line-height: $line-height-h2-sm;
-    }
 }
 
 h3 {
@@ -70,20 +60,10 @@ h3 {
         font-size: $font-size-h3-md;
         line-height: $line-height-h3-md;
     }
-
-    @media screen and (max-width: $dft-width-sm) {
-        font-size: $font-size-h3-sm;
-        line-height: $line-height-h3-sm;
-    }
 }
 
 h4 {
     font-size: $font-size-h4;
-
-    @media screen and (max-width: $dft-width-sm) {
-        font-size: $font-size-h4-sm;
-        line-height: $line-height-h4-sm;
-    }
 }
 
 a {
@@ -99,11 +79,6 @@ a {
 p {
     color: $color-font-secondary;
     line-height: $line-height-p;
-
-    @media screen and (max-width: $dft-width-sm) {
-        font-size: $font-size-smaller;
-        line-height: $line-height-p-sm;
-    }
 }
 
 textarea {

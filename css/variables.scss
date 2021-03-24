@@ -102,8 +102,3 @@ $dropdown-transition: 500ms;
     justify-content: space-between;
     flex-wrap: wrap;
 }
-
-@mixin media_margin($margin-property, $margin, $media, $margin-mobile) {
-    #{$margin-property}: $margin; 
-    @media screen and (max-width: $media) { #{$margin-property}: $margin-mobile; }
-}

@@ -4,55 +4,50 @@
         width: 100%;
         max-width: $dft-width-lg;
         padding: 0 $grid-48;
-
-        @media screen and (max-width: $dft-width-sm) {
-            max-width: $dft-width-sm;
-            padding: 0 $grid-24;
-        }
     }
 
     &-mrg {
         &_t {
-            &_120 { @include media_margin(margin-top, $grid-120, $dft-width-sm, $grid-64) }
-            &_64  { @include media_margin(margin-top, $grid-64,  $dft-width-sm, $grid-32) }
-            &_48  { @include media_margin(margin-top, $grid-48,  $dft-width-sm, $grid-24) }
-            &_32  { @include media_margin(margin-top, $grid-32,  $dft-width-sm, $grid-24) }
-            &_24  { @include media_margin(margin-top, $grid-24,  $dft-width-sm, $grid-16) }
-            &_16  { @include media_margin(margin-top, $grid-16,  $dft-width-sm, $grid-8 ) }
-            &_8  { @include media_margin(margin-top, $grid-8,  $dft-width-sm, $grid-8 ) }
+            &_120 { margin-top: $grid-120; }
+            &_64  { margin-top: $grid-64 ; }
+            &_48  { margin-top: $grid-48 ; }
+            &_32  { margin-top: $grid-32 ; }
+            &_24  { margin-top: $grid-24 ; }
+            &_16  { margin-top: $grid-16 ; }
+            &_8   { margin-top: $grid-8  ; }
         }
 
         &_b {
-            &_120 { @include media_margin(margin-bottom, $grid-120, $dft-width-sm, $grid-64) }
-            &_64  { @include media_margin(margin-bottom, $grid-64,  $dft-width-sm, $grid-32) }
-            &_48  { @include media_margin(margin-bottom, $grid-48,  $dft-width-sm, $grid-24) }
-            &_32  { @include media_margin(margin-bottom, $grid-32,  $dft-width-sm, $grid-24) }
-            &_24  { @include media_margin(margin-bottom, $grid-24,  $dft-width-sm, $grid-16) }
-            &_16  { @include media_margin(margin-bottom, $grid-16,  $dft-width-sm, $grid-8 ) }
-            &_8  { @include media_margin(margin-bottom, $grid-8,  $dft-width-sm, $grid-8 ) }
+            &_120 { margin-bottom: $grid-120; }
+            &_64  { margin-bottom: $grid-64 ; }
+            &_48  { margin-bottom: $grid-48 ; }
+            &_32  { margin-bottom: $grid-32 ; }
+            &_24  { margin-bottom: $grid-24 ; }
+            &_16  { margin-bottom: $grid-16 ; }
+            &_8   { margin-bottom: $grid-8  ; }
         }
     }
 
     &-wrp {
         &-mrg {
             &_t {
-                &_120 { @include media_margin(margin-top, -$grid-120, $dft-width-sm, -$grid-64) }
-                &_64  { @include media_margin(margin-top, -$grid-64,  $dft-width-sm, -$grid-32) }
-                &_48  { @include media_margin(margin-top, -$grid-48,  $dft-width-sm, -$grid-24) }
-                &_32  { @include media_margin(margin-top, -$grid-32,  $dft-width-sm, -$grid-24) }
-                &_24  { @include media_margin(margin-top, -$grid-24,  $dft-width-sm, -$grid-16) }
-                &_16  { @include media_margin(margin-top, -$grid-16,  $dft-width-sm, -$grid-8 ) }
-                &_8  { @include media_margin(margin-top, -$grid-8,  $dft-width-sm, -$grid-8 ) }
+                &_120 { margin-top: -$grid-120; }
+                &_64  { margin-top: -$grid-64 ; }
+                &_48  { margin-top: -$grid-48 ; }
+                &_32  { margin-top: -$grid-32 ; }
+                &_24  { margin-top: -$grid-24 ; }
+                &_16  { margin-top: -$grid-16 ; }
+                &_8   { margin-top: -$grid-8  ; }
             }
     
             &_b {
-                &_120 { @include media_margin(margin-bottom, -$grid-120, $dft-width-sm, -$grid-64) }
-                &_64  { @include media_margin(margin-bottom, -$grid-64,  $dft-width-sm, -$grid-32) }
-                &_48  { @include media_margin(margin-bottom, -$grid-48,  $dft-width-sm, -$grid-24) }
-                &_32  { @include media_margin(margin-bottom, -$grid-32,  $dft-width-sm, -$grid-24) }
-                &_24  { @include media_margin(margin-bottom, -$grid-24,  $dft-width-sm, -$grid-16) }
-                &_16  { @include media_margin(margin-bottom, -$grid-16,  $dft-width-sm, -$grid-8 ) }
-                &_8  { @include media_margin(margin-bottom, -$grid-8,  $dft-width-sm, -$grid-8 ) }
+                &_120 { margin-bottom: -$grid-120; }
+                &_64  { margin-bottom: -$grid-64 ; }
+                &_48  { margin-bottom: -$grid-48 ; }
+                &_32  { margin-bottom: -$grid-32 ; }
+                &_24  { margin-bottom: -$grid-24 ; }
+                &_16  { margin-bottom: -$grid-16 ; }
+                &_8   { margin-bottom: -$grid-8  ; }
             }
         }
     }
@@ -136,18 +131,9 @@
             }
         }
 
-        @media screen and (max-width: $dft-width-sm) {
-            font-size: $font-size-smaller;
-            padding: $grid-16;
-        }
-
         &_sm {
             font-size: $font-size-smaller;
             padding: $grid-16 $grid-32;
-
-            @media screen and (max-width: $dft-width-sm) {
-                font-size: $font-size-smallest;
-            }
         }
     }
 
@@ -176,10 +162,6 @@
             &:focus {
                 border: 1px solid $color-primary; 
             }
-
-            @media screen and (max-width: $dft-width-sm) {
-                font-size: $font-size-smaller;
-            }
         }
     }
 
@@ -189,10 +171,6 @@
         letter-spacing: 0.02em;
         color: $color-primary;
         text-transform: uppercase;
-
-        @media screen and (max-width: $dft-width-sm) {
-            font-size: $font-size-smaller;
-        }
     }
 
     &-link {

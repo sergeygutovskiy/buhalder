@@ -86,9 +86,5 @@
         &:hover, &:focus {
             opacity: 1;
         }
-
-        @media screen and (max-width: $dft-width-sm) {
-            opacity: 1;
-        }
     }
 }

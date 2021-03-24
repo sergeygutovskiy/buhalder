@@ -15,7 +15,6 @@
         @include flex-between;
         flex-wrap: wrap;
         align-items: baseline;
-        /* margin-top: -$grid-64; */
         padding-bottom: $grid-32;
         border-bottom: solid 1px rgba(102, 115, 143, 0.2);
     }
@@ -33,7 +32,6 @@
 
     &__title {
         @include font-smaller;
-        /* margin-bottom: $grid-24; */
         font-weight: 600;
         color: $color-font-secondary;
         text-transform: uppercase;       
