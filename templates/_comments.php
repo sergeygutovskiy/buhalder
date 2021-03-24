@@ -207,7 +207,6 @@
                 </div>
             </div>
         </div>
-        <div class="comments__pagination comments__pagination_lg dft-mrg_t_32 dft-pagination"></div>
-        <div class="comments__pagination comments__pagination_md dft-mrg_t_32 dft-pagination"></div>
+        <div class="comments__pagination comments__pagination_lg dft-mrg_t_48 dft-pagination"></div>
     </div>
 </section>

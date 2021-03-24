@@ -1,4 +1,4 @@
-<section>
+<section class="navigation-wrapper">
     <div class="navigation dft-container">
         <a class="navigation__logo" href="/">
             <!-- <img src="imgs/logo.svg" alt=""> -->

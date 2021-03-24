@@ -1,8 +1,11 @@
 .navigation {
+    &-wrapper {
+        z-index: $z-layer-navigation;
+    }
+
     display: flex;
     justify-content: space-between;
     position: relative;
-    z-index: $z-layer-navigation;
     align-items: center;
     font-weight: 600;
 

@@ -823,9 +823,11 @@ iframe {
   display: flex;
   justify-content: space-between;
   position: relative;
-  z-index: 10;
   align-items: center;
   font-weight: 600;
+}
+.navigation-wrapper {
+  z-index: 10;
 }
 .navigation__logo:hover svg > g > path, .navigation__logo:focus svg > g > path {
   fill: #0C7DFF;
