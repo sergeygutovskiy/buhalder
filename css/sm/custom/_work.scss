@@ -1,4 +1,8 @@
 .work {
+    &__info {
+        margin-right: 0;
+    }
+
     &-timeline {
         padding: $grid-24 $grid-32;
         border-radius: $border-radius-sm;

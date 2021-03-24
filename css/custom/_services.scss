@@ -62,4 +62,11 @@
     @media screen and (max-width: 900px) {
         flex-basis: 0;
     }
+
+    p {
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center;
+        max-width: 340px;
+    }
 }

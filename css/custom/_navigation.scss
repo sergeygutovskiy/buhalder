@@ -1,18 +1,12 @@
-@import "_nav_btn";
-
 .navigation {
-    $switch-to-md: 1160px;
-    
-    @include flex-between;
+    display: flex;
+    justify-content: space-between;
     position: relative;
     z-index: $z-layer-navigation;
     align-items: center;
     font-weight: 600;
 
     &__logo {
-        // img {
-        //    height: 34px;
-        // }
         &:hover, &:focus {
             svg {
                 > g {
@@ -25,9 +19,13 @@
     }
 
     &__links {
-        @include flex-between;
+        display: flex;
+        justify-content: space-between;
         position: relative;
-        min-width: 500px;
+        max-width: 500px + $grid-32 * 2;
+        flex-basis: 500px;
+        width: 100%;
+        padding: 0 $grid-32;
     }
 
     &__link {
@@ -138,48 +136,36 @@
         }
 
         &__links {
-            position: absolute;
-            top: 100%;
-            
-            display: none;
+            display: flex;
             flex-direction: column;
-            width: 100%;
-            
-            padding: $grid-48 0;
             padding-top: $grid-24;
-            margin-top: $grid-24;
-
-            background-color: white;
-            
+            padding-bottom: $grid-24;
             font-size: $font-size-biggest;
             font-weight: 600;
 
-            &.active {
-                display: flex;
+            &-wrapper {
+                position: absolute;
+                margin-top: $grid-24;
+                top: 100%;
+                left: 0;
+                width: 100%;
+                overflow: hidden;
+                background-color: white;
+
+                max-height: 0;
+                transition: max-height $dropdown-transition cubic-bezier(0, 1, 0, 1);
+
+                box-shadow: 0px 2px 4px $color-secondary;
+
+                &.active {
+                    max-height: 1000px;
+                    transition: max-height $dropdown-transition ease-in-out;
+                }
             }
         }
 
-        &__link {
-
-        }
-
-        &-dropdown {
-            display: none;
-
-            &__body {
-
-            }
-
-            &__item {
-            }
-        }
-    }
-
-    @media screen and (max-width: $switch-to-md) {
-        display: none;
-
-        &_md {
-            display: block;
+        @media screen and (max-width: 900px) {
+            padding-top: 31px;
         }
     }
 }

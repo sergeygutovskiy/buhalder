@@ -1,4 +1,4 @@
-<footer class="footer dft-margin-top-120">
+<footer class="footer dft-mrg_t_120">
     <div class="footer__wrapper dft-container">
         <div class="footer__content dft-wrp-mrg_t_64">
             <div class="footer__col dft-mrg_t_64 dft-block-pd_right">

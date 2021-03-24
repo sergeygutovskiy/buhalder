@@ -1,9 +1,10 @@
 .dft {
     &-container {
         margin: auto;
+        max-width: $dft-width-lg + $grid-48 * 2;
         width: 100%;
-        max-width: $dft-width-lg;
-        padding: 0 $grid-48;
+        padding-left: $grid-48;
+        padding-right: $grid-48;
     }
 
     &-mrg {

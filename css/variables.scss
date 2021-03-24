@@ -12,6 +12,7 @@ $font-size-h1-md: 2.1875rem;
 $font-size-h1-sm: 1.625rem;
 
 $font-size-h2: 2.5rem;
+$font-size-h2-md: 1.75rem;
 $font-size-h2-sm: 1.5rem;
 
 $font-size-h3: 2.1875rem;
@@ -19,6 +20,7 @@ $font-size-h3-md: 1.75em;
 $font-size-h3-sm: 1.5rem;
 
 $font-size-h4: 1.25rem;
+$font-size-h4-md: 1.125rem;
 $font-size-h4-sm: 1.125rem;
 
 // bigger font sizes
@@ -38,12 +40,14 @@ $line-height-h1-md: 3rem;
 $line-height-h1-sm: normal;
 
 $line-height-h2: 3rem;
+$line-height-h2-md: 2.375rem;
 $line-height-h2-sm: 2.125rem;
 
 $line-height-h3: 3rem;
 $line-height-h3-md: 2.4375rem;
 $line-height-h3-sm: 2.125rem;
 
+$line-height-h4-md: 1.75em;
 $line-height-h4-sm: 1.75em;
 
 // <p> line hrights
@@ -74,9 +78,9 @@ $grid-4: 4px;
 
 // device sizes
 
-$dft-width-lg: 1420px + $grid-48 * 2;
-$dft-width-md: 1200px + $grid-48 * 2;
-$dft-width-sm: 500px + $grid-24 * 2;
+$dft-width-lg: 1420px;
+$dft-width-md: 1024px;
+$dft-width-sm: 600px;
 
 // z indexes
 

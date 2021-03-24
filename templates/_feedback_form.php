@@ -1,6 +1,6 @@
 <section class="dft-mrg_t_120 dft-container">
     <div class="feedback">
-        <div class="feedback__info dft-mrg_b_64 dft-block-pd_right">
+        <div class="feedback__info dft-mrg_b_32 dft-block-pd_right">
             <h2 class="dft-mrg_b_24">Запишитесь на бесплатную консультацию</h2>
             <p class="dft-mrg_b_48">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
@@ -9,7 +9,7 @@
             </p>
             <a class="dft-btn dft-btn_secondary" href="">Наши контакты</a>
         </div>
-        <form class="feedback__form dft-mrg_b_64">
+        <form class="feedback__form">
             <div class="dft-form-group">
                 <label class="dft-form-label" for="">Имя</label>
                 <input class="dft-form-input" type="text">

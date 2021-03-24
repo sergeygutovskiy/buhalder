@@ -3,29 +3,22 @@
 
     @include flex-between;
     position: relative;
-    margin-bottom: $grid-120 * 2 + $grid-64;
     padding: $grid-64 $grid-48;
-    padding-bottom: 0;
-    border-radius: $grid-48;
     background-color: $color-secondary;
+    border-radius: 40px;
 
     &__info {
+        position: relative;
         max-width: 540px;
     }
 
     &__form {
-        position: absolute;
-        right: $grid-48;
+        position: relative;
         max-width: 420px;
         width: 100%;
         padding: $grid-32;
         background-color: #FFFFFF;
         box-shadow: 0px 10px 32px rgba(24, 21, 35, 0.05);
         border-radius: $grid-24;
-
-        @media screen and (max-width: $media-md-template) {
-            position: relative;
-            right: 0;
-        }
     }
 }

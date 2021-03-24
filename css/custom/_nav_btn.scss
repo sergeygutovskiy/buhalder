@@ -1,15 +1,16 @@
 .navigation-btn {
     position: absolute;
-    right: 0;
+    right: $grid-48;
     width: $grid-64;
     height: $grid-64;
     border-radius: $grid-16;
     background-color: $color-secondary;
 
     @media screen and (max-width: $dft-width-sm) {
-        background-color: transparent;
+        right: $grid-24;
         width: $grid-24;
         height: $grid-16;
+        background-color: transparent;
     }
 
     > div {

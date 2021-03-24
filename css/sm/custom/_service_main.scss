@@ -1,0 +1,42 @@
+.service-main {
+    &__background {
+        display: none;
+    }
+
+    &__content {
+    }
+
+    &__info {
+    }
+
+    &__body {
+    }
+
+    &__slider {
+        background-color: $color-secondary;
+    }
+
+    &__slide {
+        padding: $grid-16;
+    }
+
+    &__buttons {
+        position: relative;
+    }
+
+    &__footer {
+        justify-content: flex-start;
+    }
+
+    &__gallery-slider {
+    } 
+
+    &__pagination {
+        margin-left: 0;
+    }
+
+    &__gallery-slide {
+        > div {
+        }
+    }
+}

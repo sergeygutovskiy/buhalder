@@ -39,11 +39,6 @@ h1, h2, h3, h4 {
 h1 {
     font-size: $font-size-h1;
     line-height: $line-height-h1;
-
-    @media screen and (max-width: $dft-width-md) {
-        font-size: $font-size-h1-md;
-        line-height: $line-height-h1-md;
-    }
 }
 
 h2 {
@@ -55,11 +50,6 @@ h2 {
 h3 {
     font-size: $font-size-h3;
     line-height: $line-height-h3;
-
-    @media screen and (max-width: $dft-width-md) {
-        font-size: $font-size-h3-md;
-        line-height: $line-height-h3-md;
-    }
 }
 
 h4 {

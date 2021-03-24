@@ -1,14 +1,15 @@
 .feedback {
     &__info {
-        padding: 0 $grid-16;
+        padding: 0;
     }
 
     &__form {
-        padding: $grid-24;
+        padding: 0;
         border-radius: $border-radius-sm;
+        background-color: transparent;
+        box-shadow: none;
     }
 
-    padding: $grid-16;
-    padding-bottom: 0;
+    padding: $grid-24;
     border-radius: $border-radius-sm;
 }

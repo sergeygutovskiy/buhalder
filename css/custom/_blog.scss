@@ -12,6 +12,7 @@
         flex-direction: column;
         align-items: flex-start;
         flex-basis: 370px;
+        max-width: 440px;
         flex-grow: 1;
         padding: $grid-32;
         border-radius: $grid-16;
@@ -27,7 +28,7 @@
         }
 
         &:not(:last-child) {
-            margin-right: $grid-48;
+            margin-right: auto;
         }
 
         @media screen and (max-width: 1200px) {

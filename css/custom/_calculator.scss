@@ -9,10 +9,6 @@
         max-width: 630px;
         width: 100%;
         padding: $grid-48 0;
-
-        @media screen and (max-width: $dft-width-sm) {
-            padding-top: 0;
-        }
     }
 
     &__form {
@@ -23,11 +19,6 @@
         padding: $grid-32 $grid-48;
         background-color: $color-secondary;
         border-radius: $grid-32;
-
-        @media screen and (max-width: $dft-width-sm) {
-            padding: $grid-32;
-            border-radius: $border-radius-sm;
-        }
     }
 
     &__btn-group {
@@ -47,35 +38,6 @@
                 border: solid 1px $color-primary;
             }
         }
-
-        @media screen and (max-width: $dft-width-sm) {
-            > button {
-                &:not(:last-child) {
-                    margin-right: 0;
-                }
-            }
-            
-            &:nth-child(2) {
-                > button {
-                    &:nth-child(1) { flex-grow: 1; }
-                    &:nth-child(2) { flex-grow: 1; }
-                }
-            }
-            &:nth-child(4) {
-                > button {
-                    &:nth-child(1) { flex-grow: 1; margin-right: $grid-8; }
-                    &:nth-child(2) { order: 2; flex-grow: 1; }
-                    &:nth-child(3) { order: 1; flex-grow: 1; }
-                }
-            }
-            &:nth-child(6) {
-                > button {
-                    &:nth-child(1) { order: 2; flex-basis: 100%; }
-                    &:nth-child(2) { flex-grow: 1; margin-right: $grid-8; }
-                    &:nth-child(3) { flex-grow: 1; flex-shrink: 1; }
-                }
-            }
-        }
     }
 
     &__title {
@@ -90,10 +52,6 @@
     &__price-text {
         font-weight: 600;
         font-size: $font-size-bigger;
-    
-        @media screen and (max-width: $dft-width-sm) {
-            font-size: 1rem;
-        }
     }
 
     &__price {
@@ -108,10 +66,6 @@
             display: inline-block;
             font-size: 1rem;
             font-weight: 500;
-
-            @media screen and (max-width: $dft-width-sm) {
-                font-size: $font-size-smaller;
-            }
         }
     }
 }
