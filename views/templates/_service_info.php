@@ -8,11 +8,11 @@
     </div>
     <div class="service-info__content">
         <nav class="service-info__nav dft-mrg_t_64 dft-wrp-mrg_b_8">
-            <button class="dft-btn dft-mrg_b_8 dft-btn_trans active" onclick="buh_services_btn_click(0)">Комплексный учет</button>
-            <button class="dft-btn dft-mrg_b_8 dft-btn_trans"        onclick="buh_services_btn_click(1)">Отчетность</button>
-            <button class="dft-btn dft-mrg_b_8 dft-btn_trans"        onclick="buh_services_btn_click(2)">Программа и консультация</button>
-            <button class="dft-btn dft-mrg_b_8 dft-btn_trans"        onclick="buh_services_btn_click(3)">Расчет заработной платы</button>
-            <button class="dft-btn dft-mrg_b_8 dft-btn_trans"        onclick="buh_services_btn_click(4)">Кадровый учет</button>
+            <button class="service-info__btn dft-btn dft-mrg_b_8 dft-btn_trans active">Комплексный учет</button>
+            <button class="service-info__btn dft-btn dft-mrg_b_8 dft-btn_trans"       >Программа и консультация</button>
+            <button class="service-info__btn dft-btn dft-mrg_b_8 dft-btn_trans"       >Отчетность</button>
+            <button class="service-info__btn dft-btn dft-mrg_b_8 dft-btn_trans"       >Расчет заработной платы</button>
+            <button class="service-info__btn dft-btn dft-mrg_b_8 dft-btn_trans"       >Кадровый учет</button>
         </nav>
         <div class="service-info__body dft-mrg_t_64">
             <div class="service-info__slider">

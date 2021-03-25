@@ -1,5 +1,5 @@
 function init() {
-    let work_slider = new Swiper(".work-timeline__body .swiper-container", {
+    let slider = new Swiper(".work-timeline__body .swiper-container", {
         speed: 150,
         slidesPerView: 1,
         effect: 'fade',
@@ -9,49 +9,44 @@ function init() {
         },
     });
     
-    let work_steps = document.getElementsByClassName("work-timeline__step");
-    let work_step_infos = document.getElementsByClassName("work-timeline__info");
+    let steps = document.getElementsByClassName("work-timeline__step");
+    let step_infos = document.getElementsByClassName("work-timeline__info");
     
-    let work_step_info_active_index = 0;
+    let active_index = 0;
     
-    for (let i = 0; i < work_steps.length; i++)
-    {
-        let work_step = work_steps[i];
-        let work_step_info = work_step_infos[i];
+    for (let i = 0; i < steps.length; i++) {
+        let step = steps[i];
+        let step_info = step_infos[i];
     
-        work_step.addEventListener("click", function() {
-            work_step_infos[work_step_info_active_index].classList.remove("active");
-            work_step_info_active_index = i;
-            work_step_info.classList.add("active");
+        step.addEventListener("click", function() {
+            step_infos[active_index].classList.remove("active");
+            step_info.classList.add("active");
+            active_index = i;
     
-            work_slider.slideTo(work_step_info_active_index);
+            slider.slideTo(active_index);
     
             let has_active = 0;
-            for (let j = 0; j <= i; j++)
-            {
-                if (work_steps[j].classList.contains("active"))
-                {
+            for (let j = 0; j <= i; j++) {
+                if (steps[j].classList.contains("active")) {
                     has_active++;
                     continue;
                 }
     
                 setTimeout(() => {
-                    work_steps[j].classList.add("active");
+                    steps[j].classList.add("active");
                 }, (j - has_active) * 150);
             }
     
             let has_not_active = 0;
-            for (let j = work_steps.length - 1; j > i; j--)
-            {
-                if (!work_steps[j].classList.contains("active"))
-                {
+            for (let j = steps.length - 1; j > i; j--) {
+                if (!steps[j].classList.contains("active")) {
                     has_not_active++;
                     continue;
                 }
     
                 setTimeout(() => {
-                    work_steps[j].classList.remove("active");
-                }, (work_steps.length - j - has_not_active - 1) * 150);
+                    steps[j].classList.remove("active");
+                }, (steps.length - j - has_not_active - 1) * 150);
             }
         });
     }

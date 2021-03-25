@@ -1,5 +1,5 @@
 function init() {
-    let comments_slider = new Swiper('.comments__slider_lg', {
+    let slider = new Swiper('.comments__slider_lg', {
         slidesPerView: 1,
         spaceBetween: 64,
         centeredSlides: true,
@@ -10,10 +10,11 @@ function init() {
             bulletClass: "dft-pagination__bullet",
             bulletActiveClass: "active",
             clickable: true
-        }
+        },
+        autoHeight: true
     });
     
-    let comments_slider_md = new Swiper('.comments__slider_md', {
+    let slider_md = new Swiper('.comments__slider_md', {
         slidesPerView: 1,
         spaceBetween: 64,
         centeredSlides: true,

@@ -1625,7 +1625,7 @@ iframe {
     padding-top: 0;
   }
   .calculator__form {
-    padding: 32px;
+    padding: 24px;
     border-radius: 20px;
   }
   .calculator__btn-group > button:not(:last-child) {
@@ -1724,6 +1724,10 @@ iframe {
   .service__icon {
     width: 55px;
     height: 55px;
+  }
+
+  .comment {
+    padding: 24px;
   }
 
   .service-main__background {

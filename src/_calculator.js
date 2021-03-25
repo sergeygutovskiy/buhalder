@@ -1,7 +1,7 @@
 function init() {
-    let calc_btn_groups = document.getElementsByClassName("calculator__btn-group");
-    let calc_price_text = document.getElementsByClassName("calculator__price")[0];
-    let calc_active_btns = [0, 0, 0];
+    let button_groups = document.getElementsByClassName("calculator__btn-group");
+    let price_text = document.getElementsByClassName("calculator__price")[0];
+    let active_buttons = [0, 0, 0];
 
     const prices = [
         [
@@ -28,17 +28,18 @@ function init() {
         ]
     ]
 
-    for (let i = 0; i < calc_btn_groups.length; i++)
-    {
-        for (let j = 0; j < calc_btn_groups[i].children.length; j++)
-        {
-            calc_btn_groups[i].childNodes[j * 2 + 1].addEventListener("click", function() {
-                calc_btn_groups[i].childNodes[calc_active_btns[i] * 2 + 1].classList.remove("active");
-                calc_active_btns[i] = (j * 2) / 2;
+    for (let i = 0; i < button_groups.length; i++) {
+        for (let j = 0; j < button_groups[i].children.length; j++) {
+            
+            let group = button_groups[i];
+            group.childNodes[j * 2 + 1].addEventListener("click", function() {
+                
+                group.childNodes[active_buttons[i] * 2 + 1].classList.remove("active");
+                active_buttons[i] = (j * 2) / 2;
                 
                 this.classList.add("active");
-                calc_price_text.childNodes[1].textContent = "от " 
-                    + prices[calc_active_btns[0]][calc_active_btns[1]][calc_active_btns[2]][0];
+                price_text.childNodes[1].textContent = "от " 
+                    + prices[ active_buttons[0] ][ active_buttons[1] ][ active_buttons[2] ][0];
                     + "<span> ₽/месяц </span>";
             });
         }

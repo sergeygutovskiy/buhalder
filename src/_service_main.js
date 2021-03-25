@@ -1,5 +1,5 @@
 function init() {
-    let service_main_slider = new Swiper('.service-main__slider', {
+    let slider = new Swiper('.service-main__slider', {
         slidesPerView: 1,
         speed: 400,
         effect: 'fade',
@@ -13,14 +13,18 @@ function init() {
             bulletActiveClass: "active",
             clickable: true
         },
+        navigation: {
+            nextEl: ".service-main__button_right",
+            prevEl: ".service-main__button_left",
+        },
         on: {
             slideChange: function() {
-                service_main_gallery_slider.slideTo(this.activeIndex);
+                gallery_slider.slideTo(this.activeIndex);
             },
         },
     });
     
-    let service_main_gallery_slider = new Swiper('.service-main__gallery-slider', {
+    let gallery_slider = new Swiper('.service-main__gallery-slider', {
         slidesPerView: 1,
         speed: 400,
         spaceBetween: 48,
@@ -33,18 +37,7 @@ function init() {
                 slidesPerView: 3,
             },
         }
-    });
-    
-    service_main_slider._slidePrev = function() {
-        service_main_slider.slidePrev();
-    }
-    
-    service_main_slider._slideNext = function() {
-        service_main_slider.slideNext();
-    }
-    
-    document.getElementsByClassName("service-main__button_left")[0].addEventListener("click", service_main_slider._slidePrev);
-    document.getElementsByClassName("service-main__button_right")[0].addEventListener("click", service_main_slider._slideNext);    
+    });   
 }
 
 module.exports = { init };

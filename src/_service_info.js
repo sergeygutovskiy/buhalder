@@ -1,17 +1,18 @@
 function init() {
-    let buh_services_nav = document.getElementsByClassName("service-info__nav")[0];
-    let buh_services_slider = document.getElementsByClassName("service-info__slider")[0];
-    let buh_services_active_btn_index = 0;
+    let slides = document.getElementsByClassName("service-info__slide-wrapper");
+    let buttons = document.getElementsByClassName("service-info__btn");
+    let active_btn_index = 0;
 
-    function click(index)
-    {
-        buh_services_nav.childNodes[buh_services_active_btn_index * 2 + 1].classList.remove("active");
-        buh_services_slider.childNodes[buh_services_active_btn_index * 2 + 1].classList.remove("active");
-
-        buh_services_active_btn_index = index;
+    for (let i = 0; i < buttons.length; i++) {
+        buttons[i].addEventListener("click", function() {
+            buttons[active_btn_index].classList.remove("active");
+            slides[active_btn_index].classList.remove("active");
+    
+            this.classList.add("active");
+            slides[i].classList.add("active");
         
-        buh_services_nav.childNodes[index * 2 + 1].classList.add("active");
-        buh_services_slider.childNodes[index * 2 + 1].classList.add("active");
+            active_btn_index = i;
+        });
     }
 }
 
