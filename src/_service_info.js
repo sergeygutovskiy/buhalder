@@ -1,6 +1,6 @@
 function init() {
-    let buh_services_nav = document.getElementsByClassName("buh-services__nav")[0];
-    let buh_services_slider = document.getElementsByClassName("buh-services__slider")[0];
+    let buh_services_nav = document.getElementsByClassName("service-info__nav")[0];
+    let buh_services_slider = document.getElementsByClassName("service-info__slider")[0];
     let buh_services_active_btn_index = 0;
 
     function click(index)

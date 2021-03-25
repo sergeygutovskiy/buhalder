@@ -71,13 +71,14 @@
         &-wrapper {
             max-height: 0;
             overflow: hidden;
-            transition: max-height 300ms linear;
+            transition: max-height $dropdown-transition cubic-bezier(0, 1, 0, 1);
         }
     }
 
     .active &__body {
         &-wrapper {
-            max-height: 500px;
+            max-height: 240px;
+            transition: max-height $dropdown-transition ease-in-out;
         }
     }
 

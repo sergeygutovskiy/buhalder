@@ -4,7 +4,7 @@
     }
 
     &-timeline {
-        padding: $grid-24 $grid-32;
+        padding: $grid-24;
         border-radius: $border-radius-sm;
 
         &__step {
@@ -12,13 +12,46 @@
 
             > div {
                 &:first-child {
-                    padding-left: 0;
+                    padding-left: $grid-8;
+                }
+
+                &:nth-child(2) {
+                    margin-top: $grid-4;
                 }
 
                 &:last-child {
-                    padding-left: 0;
+                    margin-top: $grid-8;
+                    padding-left: $grid-8;
                     font-size: $font-size-smallest;
+                    line-height: $line-height-smallest;
                 }
+            }
+
+            &:nth-child(odd) {
+                flex: 50%;
+
+                > div {
+                    &:first-child {
+                        padding-left: 0;
+                    }
+
+                    &:last-child {
+                        
+                        padding-left: 0;
+                    }
+                }  
+            }
+
+            &:nth-child(2) {
+                > div {
+                    &:first-child {
+                        padding-left: $grid-8;
+                    }
+
+                    &:last-child {
+                        padding-left: $grid-8;
+                    }
+                }           
             }
         }
     }

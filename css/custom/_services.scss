@@ -35,7 +35,12 @@
     padding: $grid-32;
     text-align: center;
     border-radius: $grid-24;
+    border: solid 1px transparent;
     box-shadow: 0px 11px 28px 1px rgba(38, 33, 58, 0.04);
+    
+    h4 {
+        transition: color $text-transition linear;
+    }
 
     &__icon {
         margin: auto;
@@ -58,6 +63,15 @@
     &:nth-child(3) { .service__icon { background-color: #F0FBF7; color: #47D39B; } }
     &:nth-child(4) { .service__icon { background-color: #FDF5F2; color: #FFA05C; } }
     &:nth-child(6) { .service__icon { background-color: rgba(12, 125, 255, 0.1); color: #0C7DFF; } }
+
+    &:hover {
+        &:nth-child(1) { border: solid 1px #F5818C; h4 { color: #F5818C; } }
+        &:nth-child(5) { border: solid 1px #04D2FC; h4 { color: #04D2FC; } }
+        &:nth-child(2) { border: solid 1px #6F3CFF; h4 { color: #6F3CFF; } }
+        &:nth-child(3) { border: solid 1px #47D39B; h4 { color: #47D39B; } }
+        &:nth-child(4) { border: solid 1px #FFA05C; h4 { color: #FFA05C; } }
+        &:nth-child(6) { border: solid 1px #0C7DFF; h4 { color: #0C7DFF; } }
+    }
 
     @media screen and (max-width: 900px) {
         flex-basis: 0;
