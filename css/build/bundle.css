@@ -1105,7 +1105,7 @@ iframe {
 }
 .active .question__body-wrapper {
   max-height: 1000px;
-  transition: max-height 500ms linear;
+  transition: max-height 150ms linear;
 }
 .question-background {
   position: absolute;
