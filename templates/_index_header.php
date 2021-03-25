@@ -5,7 +5,7 @@
             Полный или частичный учет бухгалтерии для организаций малого и среднего бизнеса
         </p>
         <div class="dft-mrg_t_48 dft-wrp-mrg_b_8">
-            <a class="dft-mrg_b_8 dft-btn dft-btn_secondary" href="">Оставить заявку</a>
+            <a class="dft-mrg_b_8 dft-btn" href="">Оставить заявку</a>
             <a class="dft-mrg_b_8 dft-btn dft-btn_secondary" href="">Услуги и цены</a>
         </div>
         <img src="../imgs/1.svg">

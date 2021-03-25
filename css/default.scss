@@ -156,6 +156,11 @@
             }
         }
 
+        &-textarea {
+            min-height: 52px;
+            max-height: 52px * 7;
+        }
+
         &-label {
             font-weight: 500;
             margin-bottom: $grid-8;

@@ -20,7 +20,7 @@
             </div>
             <div class="dft-mrg_t_24 dft-form-group">
                 <label class="dft-form-label" for="">Вопрос или описание проблемы</label>
-                <textarea class="dft-form-input" rows="5"></textarea>
+                <textarea class="dft-form-input dft-form-textarea" rows="5" min-rows></textarea>
             </div>
             <div class="dft-mrg_t_48">
                 <button class="dft-btn">

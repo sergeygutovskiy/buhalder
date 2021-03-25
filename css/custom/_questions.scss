@@ -78,7 +78,7 @@
     .active &__body {
         &-wrapper {
             max-height: 1000px;
-            transition: max-height $dropdown-transition ease-in-out;
+            transition: max-height $dropdown-transition linear;
         }
     }
 
