@@ -1,12 +1,11 @@
 <section class="comments">
-    <div class="dft-mrg_t_120 dft-container">
+    <header class="dft-mrg_t_120 dft-container dft-text-center">
         <div class="dft-title">Отзывы</div>
-        <div>
-            <h3 class="dft-mrg_t_48">
-                Отзывы наших клиентов
-            </h3>
-        </div>
-    </div>
+        <br>
+        <h3 class="dft-mrg_t_48">
+            Отзывы наших клиентов
+        </h3>
+    </header>
     <div class="dft-mrg_t_64">
         <div class="comments__slider comments__slider_lg swiper-container">
             <div class="swiper-wrapper">

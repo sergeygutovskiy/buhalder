@@ -3,7 +3,6 @@ function init() {
         slidesPerView: 1,
         speed: 400,
         spaceBetween: 48,
-        allowTouchMove: false,
         pagination: {
             el: ".about-gallery__pagination",
             bulletClass: "dft-pagination__bullet",

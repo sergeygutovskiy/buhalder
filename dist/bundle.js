@@ -16,7 +16,7 @@ var App;
   \*******************************/
 /***/ ((module) => {
 
-eval("function init() {    \n    let gallery_slider = new Swiper('.about-gallery__slider', {\n        slidesPerView: 1,\n        speed: 400,\n        spaceBetween: 48,\n        allowTouchMove: false,\n        pagination: {\n            el: \".about-gallery__pagination\",\n            bulletClass: \"dft-pagination__bullet\",\n            bulletActiveClass: \"active\",\n            clickable: true\n        },\n        navigation: {\n            nextEl: \".about-gallery__button_right\",\n            prevEl: \".about-gallery__button_left\",\n        },\n        breakpoints: {\n            601: {\n                slidesPerView: 2,\n            },\n            1025: {\n                slidesPerView: 3,\n            },\n        }\n    });   \n}\n\nmodule.exports = { init };\n\n//# sourceURL=webpack://App/./src/_about_gallery.js?");
+eval("function init() {    \n    let gallery_slider = new Swiper('.about-gallery__slider', {\n        slidesPerView: 1,\n        speed: 400,\n        spaceBetween: 48,\n        pagination: {\n            el: \".about-gallery__pagination\",\n            bulletClass: \"dft-pagination__bullet\",\n            bulletActiveClass: \"active\",\n            clickable: true\n        },\n        navigation: {\n            nextEl: \".about-gallery__button_right\",\n            prevEl: \".about-gallery__button_left\",\n        },\n        breakpoints: {\n            601: {\n                slidesPerView: 2,\n            },\n            1025: {\n                slidesPerView: 3,\n            },\n        }\n    });   \n}\n\nmodule.exports = { init };\n\n//# sourceURL=webpack://App/./src/_about_gallery.js?");
 
 /***/ }),
 

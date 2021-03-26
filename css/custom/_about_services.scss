@@ -49,8 +49,6 @@
     }
 
     &:hover {
-        cursor: pointer;
-
         &:nth-child(5) { .about-service__title { color: #04D2FC; } }
         &:nth-child(1) { .about-service__title { color: #F5818C; } }
         &:nth-child(2) { .about-service__title { color: #6F3CFF; } }

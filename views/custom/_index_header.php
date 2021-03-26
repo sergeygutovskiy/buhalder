@@ -1,7 +1,7 @@
 <section class="dft-mrg_t_64 dft-container">
-    <div class="main-header">
+    <div class="main-header dft-text-center">
         <h1>Аутсорсинг бухгалтерского учёта</h1>
-        <p class="dft-mrg_t_24">
+        <p class="dft-mrg_t_24 dft-block-center dft-block-600">
             Полный или частичный учет бухгалтерии для организаций малого и среднего бизнеса
         </p>
         <div class="dft-mrg_t_48 dft-wrp-mrg_b_8">

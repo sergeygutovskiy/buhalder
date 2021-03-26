@@ -411,6 +411,26 @@ iframe {
   line-height: 38px;
   font-weight: 600;
 }
+.dft-image-wrapper {
+  position: relative;
+  overflow: hidden;
+}
+.dft-image-wrapper::after {
+  content: "";
+  display: block;
+  padding-bottom: 100%;
+}
+.dft-image-wrapper > img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.dft-image-wrapper_70::after {
+  padding-bottom: 70%;
+}
 
 .blog {
   display: flex;
@@ -556,10 +576,7 @@ iframe {
 }
 
 .service-info {
-  margin-left: auto;
-  margin-right: auto;
   max-width: 1200px;
-  text-align: center;
 }
 .service-info h3 {
   max-width: 750px;
@@ -616,9 +633,6 @@ iframe {
   }
 }
 
-.comments {
-  text-align: center;
-}
 .comments__slider {
   position: relative;
   margin: -64px 0;
@@ -800,14 +814,8 @@ iframe {
   position: relative;
   padding: 64px 32px;
   height: 470px;
-  text-align: center;
   border-radius: 40px;
   background-color: #F6FAFF;
-}
-.main-header > p {
-  max-width: 600px;
-  margin-right: auto;
-  margin-left: auto;
 }
 .main-header > div > a {
   width: 236px;
@@ -1192,9 +1200,6 @@ iframe {
   }
 }
 
-.serts {
-  text-align: center;
-}
 .serts__body {
   position: relative;
   margin-left: auto;
@@ -1299,16 +1304,6 @@ iframe {
   padding-bottom: 75%;
 }
 
-.services__header {
-  text-align: center;
-}
-.services__header > * {
-  margin-left: auto;
-  margin-right: auto;
-}
-.services__header > p {
-  max-width: 500px;
-}
 .services__body {
   display: flex;
   justify-content: center;
@@ -1532,20 +1527,7 @@ iframe {
   border-radius: 20px;
 }
 .about-gallery__slide > div {
-  position: relative;
-  overflow: hidden;
   border-radius: 20px;
-}
-.about-gallery__slide > div > img {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-}
-.about-gallery__slide > div::after {
-  content: "";
-  display: block;
-  padding-bottom: 75%;
 }
 
 .about-services {
@@ -1610,9 +1592,6 @@ iframe {
   line-height: 28px;
   font-weight: 600;
   transition: color 150ms linear;
-}
-.about-service:hover {
-  cursor: pointer;
 }
 .about-service:hover:nth-child(5) .about-service__title {
   color: #04D2FC;
@@ -1689,22 +1668,7 @@ iframe {
   border: solid 2px #0C7DFF;
 }
 .about-people__image-wrapper {
-  position: relative;
   border-radius: 20px;
-  overflow: hidden;
-}
-.about-people__image-wrapper::after {
-  content: "";
-  display: block;
-  padding-bottom: 100%;
-}
-.about-people__image-wrapper > img {
-  position: absolute;
-  left: 0;
-  top: 0;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
 }
 
 @media screen and (max-width: 1024px) {

@@ -1,11 +1,12 @@
-<div class="service-info">
-    <div class="dft-title">Бухгалтерская компания «НеГа Консалтинг»</div>
-    <div>
+<div class="service-info dft-block-center">
+    <header class="text-center">
+        <div class="dft-title">Бухгалтерская компания «НеГа Консалтинг»</div>
+        <br>
         <h3 class="dft-mrg_t_48">
             Более 20 лет мы успешно оказываем полный спектр услуг 
             по бухгалтерскому учету предприятиям и индивидуальным предпринимателям
         </h3>
-    </div>
+    </header>
     <div class="service-info__content">
         <nav class="service-info__nav dft-mrg_t_64 dft-wrp-mrg_b_8">
             <button class="service-info__btn dft-btn dft-mrg_b_8 dft-btn_trans active">Комплексный учет</button>

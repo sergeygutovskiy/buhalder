@@ -1,9 +1,9 @@
 <section class="dft-mrg_t_120 dft-container">
-    <header class="services__header">
+    <header class="dft-text-center">
         <div class="dft-title">Услуги</div>
         <br>
         <h3 class="dft-mrg_t_48">Услуги бухгалтерской компании</h3>
-        <p class="dft-mrg_t_24">
+        <p class="dft-mrg_t_24 dft-block-center dft-block-600">
             Комплексный сервис бухгалтерских и юридических услуг по поддержке бизнеса от компании НеГа Консалтинг!
         </p>
     </header>

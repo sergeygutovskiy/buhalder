@@ -3,19 +3,19 @@
         <div class="about-gallery__slider swiper-container">
             <div class="swiper-wrapper">
                 <div class="swiper-slide about-gallery__slide">
-                    <div><img src="imgs/people-3.png"></div>
+                    <div class="dft-image-wrapper dft-image-wrapper_70"><img src="imgs/people-3.png"></div>
                 </div>
                 <div class="swiper-slide about-gallery__slide">
-                    <div><img src="imgs/people-3.png"></div>
+                    <div class="dft-image-wrapper dft-image-wrapper_70"><img src="imgs/people-3.png"></div>
                 </div>
                 <div class="swiper-slide about-gallery__slide">
-                    <div><img src="imgs/people-3.png"></div>
+                    <div class="dft-image-wrapper dft-image-wrapper_70"><img src="imgs/people-3.png"></div>
                 </div>
                 <div class="swiper-slide about-gallery__slide">
-                    <div><img src="imgs/people-3.png"></div>
+                    <div class="dft-image-wrapper dft-image-wrapper_70"><img src="imgs/people-3.png"></div>
                 </div>
                 <div class="swiper-slide about-gallery__slide">
-                    <div><img src="imgs/people-3.png"></div>
+                    <div class="dft-image-wrapper dft-image-wrapper_70"><img src="imgs/people-3.png"></div>
                 </div>
             </div>
         </div>
