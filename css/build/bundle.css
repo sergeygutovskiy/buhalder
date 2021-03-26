@@ -1609,6 +1609,28 @@ iframe {
 .about-service__title {
   line-height: 28px;
   font-weight: 600;
+  transition: color 150ms linear;
+}
+.about-service:hover {
+  cursor: pointer;
+}
+.about-service:hover:nth-child(5) .about-service__title {
+  color: #04D2FC;
+}
+.about-service:hover:nth-child(1) .about-service__title {
+  color: #F5818C;
+}
+.about-service:hover:nth-child(2) .about-service__title {
+  color: #6F3CFF;
+}
+.about-service:hover:nth-child(3) .about-service__title {
+  color: #47D39B;
+}
+.about-service:hover:nth-child(4) .about-service__title {
+  color: #FFA05C;
+}
+.about-service:hover:nth-child(6) .about-service__title {
+  color: #0C7DFF;
 }
 
 .about-1C {
@@ -1654,13 +1676,17 @@ iframe {
 .about-people__item {
   margin-top: 64px;
   margin-right: 64px;
-  max-width: 410px;
+  max-width: 430px;
   flex-basis: 370px;
   flex-grow: 1;
   padding: 48px;
   background-color: white;
   border-radius: 30px;
   border: solid 2px #EDF5FE;
+  transition: border 150ms linear;
+}
+.about-people__item:hover {
+  border: solid 2px #0C7DFF;
 }
 .about-people__image-wrapper {
   position: relative;

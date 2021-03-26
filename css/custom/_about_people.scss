@@ -12,13 +12,18 @@
     &__item {
         margin-top: $grid-64;
         margin-right: $grid-64;
-        max-width: 410px;
+        max-width: 430px;
         flex-basis: 370px;
         flex-grow: 1;
         padding: $grid-48;
         background-color: white;
         border-radius: 30px;
         border: solid 2px #EDF5FE;
+        transition: border $text-transition linear;
+
+        &:hover {
+            border: solid 2px $color-primary;
+        }
     }
 
     &__image-wrapper {

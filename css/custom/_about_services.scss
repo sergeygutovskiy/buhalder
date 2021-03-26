@@ -45,5 +45,17 @@
     &__title {
         line-height: 28px;
         font-weight: 600;
+        transition: color $text-transition linear;
+    }
+
+    &:hover {
+        cursor: pointer;
+
+        &:nth-child(5) { .about-service__title { color: #04D2FC; } }
+        &:nth-child(1) { .about-service__title { color: #F5818C; } }
+        &:nth-child(2) { .about-service__title { color: #6F3CFF; } }
+        &:nth-child(3) { .about-service__title { color: #47D39B; } }
+        &:nth-child(4) { .about-service__title { color: #FFA05C; } }
+        &:nth-child(6) { .about-service__title { color: #0C7DFF; } }
     }
 }
