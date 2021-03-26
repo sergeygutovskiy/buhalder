@@ -10,8 +10,7 @@ function init() {
             bulletClass: "dft-pagination__bullet",
             bulletActiveClass: "active",
             clickable: true
-        },
-        autoHeight: true
+        }
     });
     
     let slider_md = new Swiper('.comments__slider_md', {

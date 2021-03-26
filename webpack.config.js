@@ -1,9 +1,10 @@
 module.exports = {
     entry: "./src/index.js",
-    mode: "production",
+    mode: "development",
+    watch: true,
     output: {
-        path: "C:/Users/sofik/OneDrive/Documents/buhalder/dist",
+        path: "/home/gorynych/Projects/buhalter2/dist",
         filename: "bundle.js",
-        library: "buhalter"
+        library: "App"
     }
 }

@@ -14,6 +14,9 @@
         <link rel="stylesheet" href="css/build/bundle.css">
     </head>    
     <body>
+        <!-- overlay -->
+        <?php require "views/templates/_overlay.php"; ?>
+
         <!-- navigation -->
         <?php require "views/templates/_header.php"; ?>
         <?php require "views/templates/_nav.php"; ?>
