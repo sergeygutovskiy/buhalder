@@ -3,15 +3,6 @@
         display: none;
     }
 
-    &__content {
-    }
-
-    &__info {
-    }
-
-    &__body {
-    }
-
     &__slider {
         background-color: $color-secondary;
     }
@@ -28,15 +19,7 @@
         justify-content: flex-start;
     }
 
-    &__gallery-slider {
-    } 
-
     &__pagination {
         margin-left: 0;
-    }
-
-    &__gallery-slide {
-        > div {
-        }
     }
 }

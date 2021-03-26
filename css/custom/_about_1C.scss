@@ -1,0 +1,33 @@
+.about-1C {
+    padding: $grid-48 $grid-64;
+
+    border-radius: 40px;
+    background-color: $color-secondary;
+
+    &__body {
+        margin-left: -$grid-48;
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap-reverse;
+    }
+
+    &__logo {
+        margin-left: $grid-48;
+        flex-grow: 1;
+        max-width: 360px;
+        min-height: 320px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: $grid-32;
+        background-color: white;
+        border-radius: 24px;
+    }
+
+    &__info {
+        margin-left: $grid-48;
+        max-width: 640px;
+        flex-basis: 350px;
+        flex-grow: 1;
+    }
+}

@@ -1,0 +1,15 @@
+.about-services {
+    padding: $grid-24;
+    background-color: $color-secondary;
+    border-radius: $border-radius-sm;
+
+    &__body {
+        margin-top: -$grid-24;
+        margin-right: 0;
+    }
+}
+
+.about-service {
+    margin-top: $grid-24;
+    margin-right: 0;
+}

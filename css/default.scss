@@ -63,6 +63,16 @@
                 padding-right: $grid-32;
             }
         }
+
+        &-600 {
+            max-width: 600px;
+            width: 100%;
+        }
+
+        &-center {
+            margin-left: auto;
+            margin-right: auto;
+        }
     }
 
     &-text {
@@ -78,6 +88,10 @@
 
         &-bold {
             font-weight: 600;
+        }
+
+        &-center {
+            text-align: center;
         }
     }
 
@@ -303,6 +317,20 @@
             &:hover {
                 cursor: pointer;
             }
+        }
+    }
+
+    &-target {
+        max-width: 720px;
+        width: 100%;
+        padding: $grid-48;
+        background-color: $color-secondary;
+        border-radius: 32px;
+
+        &__title {
+            font-size: 28px;
+            line-height: 38px;
+            font-weight: 600;
         }
     }
 }

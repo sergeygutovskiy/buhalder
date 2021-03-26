@@ -10,6 +10,16 @@ var App;
 /******/ (() => { // webpackBootstrap
 /******/ 	var __webpack_modules__ = ({
 
+/***/ "./src/_about_gallery.js":
+/*!*******************************!*\
+  !*** ./src/_about_gallery.js ***!
+  \*******************************/
+/***/ ((module) => {
+
+eval("function init() {    \n    let gallery_slider = new Swiper('.about-gallery__slider', {\n        slidesPerView: 1,\n        speed: 400,\n        spaceBetween: 48,\n        allowTouchMove: false,\n        pagination: {\n            el: \".about-gallery__pagination\",\n            bulletClass: \"dft-pagination__bullet\",\n            bulletActiveClass: \"active\",\n            clickable: true\n        },\n        navigation: {\n            nextEl: \".about-gallery__button_right\",\n            prevEl: \".about-gallery__button_left\",\n        },\n        breakpoints: {\n            601: {\n                slidesPerView: 2,\n            },\n            1025: {\n                slidesPerView: 3,\n            },\n        }\n    });   \n}\n\nmodule.exports = { init };\n\n//# sourceURL=webpack://App/./src/_about_gallery.js?");
+
+/***/ }),
+
 /***/ "./src/_calculator.js":
 /*!****************************!*\
   !*** ./src/_calculator.js ***!
@@ -46,7 +56,7 @@ eval("function init() {\n    let btn = document.getElementsByClassName(\"navigat
   \*************************/
 /***/ ((module) => {
 
-eval("\nfunction init() {\n    let close_button = document.getElementsByClassName(\"dft-overlay__button\")[0];\n    let overlay = document.getElementsByClassName(\"dft-overlay\")[0];\n    let overlay_items = document.getElementsByClassName(\"dft-overlay__items\")[0];\n\n    close_button.addEventListener(\"click\", function() {\n        overlay.classList.remove(\"active\");\n        overlay_items.textContent = \"\";\n    });\n\n    overlay_items.addEventListener(\"click\", function() {\n        overlay.classList.remove(\"active\");\n        overlay_items.textContent = \"\";\n    });\n\n    let triggers = document.getElementsByClassName(\"dft-overlay-trigger\");\n    for (let i = 0; i < triggers.length; i++) {\n        let t = triggers[i];\n\n        t.addEventListener(\"click\", choose);\n    }\n}\n\nfunction open() {\n    let overlay = document.getElementsByClassName(\"dft-overlay\")[0];\n    overlay.classList.add(\"active\");\n}\n\nfunction choose() {\n    let overlays = document.getElementsByClassName(\"dft-overlay-item\");\n    let overlay_items = document.getElementsByClassName(\"dft-overlay__items\")[0];\n\n    for (let i = 0; i < overlays.length; i++) {\n        let item = overlays[i];\n\n        if (item.dataset.overlay == this.dataset.overlayTarget) {\n            overlay_items.appendChild(item.childNodes[1].cloneNode());\n            open();\n            break;\n        }\n    }\n}\n\nmodule.exports = { init };\n\n//# sourceURL=webpack://App/./src/_overlay.js?");
+eval("\nfunction init() {\n    let close_button = document.getElementsByClassName(\"dft-overlay__button\")[0];\n    let overlay = document.getElementsByClassName(\"dft-overlay\")[0];\n    let overlay_items = document.getElementsByClassName(\"dft-overlay__items\")[0];\n\n    close_button.addEventListener(\"click\", function() {\n        overlay.classList.remove(\"active\");\n        overlay_items.textContent = \"\";\n    });\n\n    overlay_items.addEventListener(\"click\", function() {\n        overlay.classList.remove(\"active\");\n        overlay_items.textContent = \"\";\n    });\n\n    let triggers = document.getElementsByClassName(\"dft-overlay-trigger\");\n    for (let i = 0; i < triggers.length; i++) {\n        let t = triggers[i];\n\n        t.addEventListener(\"click\", choose);\n    }\n}\n\nfunction open() {\n    let overlay = document.getElementsByClassName(\"dft-overlay\")[0];\n    overlay.classList.add(\"active\");\n}\n\nfunction choose() {\n    let overlays = document.getElementsByClassName(\"dft-overlay-item\");\n    let overlay_items = document.getElementsByClassName(\"dft-overlay__items\")[0];\n\n    for (let i = 0; i < overlays.length; i++) {\n        let item = overlays[i];\n\n        if (item.dataset.overlay == this.dataset.overlayTarget) {\n            overlay_items.appendChild(item.childNodes[1].cloneNode(true));\n            open();\n            break;\n        }\n    }\n}\n\nmodule.exports = { init, open };\n\n//# sourceURL=webpack://App/./src/_overlay.js?");
 
 /***/ }),
 
@@ -96,7 +106,7 @@ eval("function init() {\n    let slider = new Swiper(\".work-timeline__body .swi
   \**********************/
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
-eval("const navigation      = __webpack_require__(/*! ./_navigation.js */ \"./src/_navigation.js\");\nconst calculator      = __webpack_require__(/*! ./_calculator.js */ \"./src/_calculator.js\");\nconst service_info    = __webpack_require__(/*! ./_service_info.js */ \"./src/_service_info.js\");\nconst questions       = __webpack_require__(/*! ./_questions.js */ \"./src/_questions.js\");\nconst comments        = __webpack_require__(/*! ./_comments.js */ \"./src/_comments.js\");\nconst work            = __webpack_require__(/*! ./_work.js */ \"./src/_work.js\");\nconst service_main    = __webpack_require__(/*! ./_service_main.js */ \"./src/_service_main.js\");\nconst overlay         = __webpack_require__(/*! ./_overlay.js */ \"./src/_overlay.js\");\n\nnavigation.init();\ncalculator.init();\nservice_info.init();\nquestions.init();\ncomments.init();\nwork.init();\nservice_main.init();\noverlay.init();\n\nmodule.exports = {\n    overlay\n};\n\n//# sourceURL=webpack://App/./src/index.js?");
+eval("const navigation      = __webpack_require__(/*! ./_navigation.js */ \"./src/_navigation.js\");\nconst overlay         = __webpack_require__(/*! ./_overlay.js */ \"./src/_overlay.js\");\n\nconst calculator      = __webpack_require__(/*! ./_calculator.js */ \"./src/_calculator.js\");\nconst service_info    = __webpack_require__(/*! ./_service_info.js */ \"./src/_service_info.js\");\nconst questions       = __webpack_require__(/*! ./_questions.js */ \"./src/_questions.js\");\nconst comments        = __webpack_require__(/*! ./_comments.js */ \"./src/_comments.js\");\nconst work            = __webpack_require__(/*! ./_work.js */ \"./src/_work.js\");\nconst service_main    = __webpack_require__(/*! ./_service_main.js */ \"./src/_service_main.js\");\n\nconst about_gallery   = __webpack_require__(/*! ./_about_gallery.js */ \"./src/_about_gallery.js\");\n\nnavigation.init();\noverlay.init();\n\ncalculator.init();\nservice_info.init();\nquestions.init();\ncomments.init();\nwork.init();\nservice_main.init();\n\nabout_gallery.init();\n\n\nmodule.exports = {\n    overlay\n};\n\n//# sourceURL=webpack://App/./src/index.js?");
 
 /***/ })
 

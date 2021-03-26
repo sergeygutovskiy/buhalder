@@ -35,11 +35,11 @@ function choose() {
         let item = overlays[i];
 
         if (item.dataset.overlay == this.dataset.overlayTarget) {
-            overlay_items.appendChild(item.childNodes[1].cloneNode());
+            overlay_items.appendChild(item.childNodes[1].cloneNode(true));
             open();
             break;
         }
     }
 }
 
-module.exports = { init };
+module.exports = { init, open };

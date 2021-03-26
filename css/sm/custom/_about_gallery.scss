@@ -1,0 +1,16 @@
+.about-gallery {
+    &__footer {
+        justify-content: flex-start;
+        flex-wrap: wrap;
+    }
+
+    &__pagination {
+        margin-left: 0;
+    }
+    
+    &__buttons {
+        position: relative;
+        bottom: 0;
+        transform: none;
+    }
+}

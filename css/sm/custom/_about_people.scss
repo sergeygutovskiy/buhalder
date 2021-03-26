@@ -1,0 +1,11 @@
+.about-people {
+    &__body {
+        margin-top: -$grid-24;
+    }
+
+    &__item {
+        margin-top: $grid-24;
+        padding: $grid-24;
+        border-radius: $border-radius-sm;
+    }
+}

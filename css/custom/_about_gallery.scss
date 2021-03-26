@@ -1,0 +1,43 @@
+.about-gallery {
+    &__footer {
+        position: relative;
+        display: flex;
+        align-items: center;
+    }
+
+    &__buttons {
+        position: absolute;
+        right: 0;
+        bottom: 50%;
+        transform: translateY(50%);
+        width: 132px;
+        display: flex;
+        justify-content: space-between;
+    }
+    
+    &__slider {
+        overflow: hidden;
+        border-radius: $border-radius-sm;       
+    } 
+
+    &__slide {
+        > div {
+            position: relative;
+            overflow: hidden;
+            border-radius: $border-radius-sm;
+
+            > img {
+                position: absolute;
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+            }
+
+            &::after {
+                content: '';
+                display: block;
+                padding-bottom: 75%;
+            }
+        }
+    }
+}
