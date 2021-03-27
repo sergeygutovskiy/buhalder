@@ -43,7 +43,8 @@
 
         &:hover {        
             + * {
-               display: block; 
+               height: auto;
+               opacity: 1;
             }
         }
     }
@@ -51,9 +52,25 @@
     &-dropdown {
         position: absolute;
         top: 100%;
-        display: none;
         transform: translateX(-40%);
-        width: 768px;
+        width: 768px + 32px * 2;
+        padding-left: $grid-32;
+        padding-right: $grid-32;
+
+        height: 0;
+        overflow: hidden;
+        opacity: 0;
+        transition: opacity $text-transition linear;
+
+        &.active {
+            height: auto;
+            opacity: 1;
+        }
+
+        &:hover {
+            height: auto;
+            opacity: 1;
+        }
 
         &__body {
             margin-top: $grid-24;
@@ -105,14 +122,6 @@
             &[data-index="1"] { background-color: #F0FBF7; color: #47D39B; }
             &[data-index="3"] { background-color: #FDF5F2; color: #FFA05C; }
             &[data-index="5"] { background-color: rgba(12, 125, 255, 0.1); color: #0C7DFF; }
-        }
-
-        &.active {
-            display: block;
-        }
-
-        &:hover {
-            display: block;
         }
     }
 

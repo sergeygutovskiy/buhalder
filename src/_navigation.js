@@ -7,26 +7,22 @@ function init() {
         md_links_wrapper.classList.toggle("active");
     });
 
-    let dropdown_toggles = document.querySelectorAll("[data-toggle]");
+    let dropdown_toggle = document.querySelectorAll("[data-toggle]")[0];
+    let dropdown = document.querySelectorAll("[data-dropdown='" + dropdown_toggle.dataset.toggle + "']")[0];
+    
+    dropdown_toggle.addEventListener("focus", function() {
+        dropdown.classList.add("active");
+    });
 
-    for (let i = 0; i < dropdown_toggles.length; i++) {
-        let toggle = dropdown_toggles[i];
-        let dropdown = document.querySelectorAll("[data-dropdown='" + toggle.dataset.toggle + "']")[0];
-        
-        toggle.addEventListener("focus", function(event) {
-            dropdown.classList.add("active");
-        });
+    dropdown_toggle.addEventListener("keydown", function(event) {
+        if (event.shiftKey && event.keyCode == 9)
+            dropdown.classList.remove("active");
+    });
 
-        toggle.addEventListener("keydown", function(event) {
-            if (event.shiftKey && event.keyCode == 9)
-                dropdown.classList.remove("active");
-        });
-
-        dropdown.getElementsByTagName("a")[dropdown.getElementsByTagName("a").length - 1].addEventListener("keydown", function(event) {
-            if (event.keyCode == 9)
-                dropdown.classList.remove("active");
-        });
-    }
+    dropdown.getElementsByTagName("a")[dropdown.getElementsByTagName("a").length - 1].addEventListener("keydown", function(event) {
+        if (event.keyCode == 9)
+            dropdown.classList.remove("active");
+    });
 }
 
 module.exports = { init };

@@ -1,9 +1,9 @@
 @import "variables.scss";
 @import "fonts.scss";
 
-@import "main.scss";
-@import "default.scss";
-@import "custom/custom.scss";
+@import "lg/main.scss";
+@import "lg/default.scss";
+@import "lg/custom/custom.scss";
 
 @media screen and (max-width: $dft-width-md)
 {
