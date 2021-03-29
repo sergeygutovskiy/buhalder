@@ -7,11 +7,36 @@
 .question {
     &__title {
         padding: $grid-24;
+    
+        > h4 {
+            > i {
+                transition: none;
+            }
+        }
+
+        &:hover {
+            > h4 {
+                > i {
+                    transition: none;
+                }
+            }
+        }
     }
 
     &__body {
         padding: 0 $grid-24;
         padding-bottom: $grid-24;
+        
+        &-wrapper {
+            transition: none;
+        }
+    }
+
+    .active &__body {
+        &-wrapper {
+            max-height: 240px;
+            transition: none;
+        }
     }
 
     &-background {

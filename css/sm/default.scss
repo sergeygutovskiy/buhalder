@@ -2,6 +2,11 @@
     &-container {
         padding-left: $grid-24;
         padding-right: $grid-24;
+
+        @media screen and (max-width: 340px) {
+            padding-left: 12px;
+            padding-right: 12px;           
+        }
     }
 
     &-mrg {

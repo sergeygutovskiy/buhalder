@@ -156,6 +156,11 @@
         &-group {
             display: flex;
             flex-direction: column;
+
+            &_checkbox {
+                flex-direction: row;
+                align-items: center;
+            }
         }
 
         &-input {
@@ -182,6 +187,47 @@
             &:focus {
                 border: 1px solid $color-primary; 
             }
+
+            
+        }
+
+        &-checkbox {
+            appearance: none;
+            position: relative;
+            display: inline-block;
+            width: 24px;
+            height: 24px;
+            background-color: white;
+            border-radius: 4px;
+            border: solid 1px $color-border;
+        
+            &:checked {
+                background-color: $color-primary;
+            
+                &:after {
+                    position: absolute;
+                    top: 50%;
+                    left: 50%;
+                    transform: translate(-50%, -50%);
+                    font-family: "Font Awesome 5 Free"; 
+                    font-weight: 900;
+                    font-size: 12px;
+                    color: white;
+                    content: "\f00c";
+                } 
+            }
+        }
+
+        .dft-form-group_checkbox &-label {
+            margin-bottom: 0;
+            flex-grow: 1;
+            flex-basis: 50%;
+            font-size: 12px;
+            color: $color-font-secondary;
+        }
+
+        .dft-form-group_checkbox &-checkbox {
+            margin-right: $grid-16;
         }
     }
 

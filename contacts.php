@@ -72,6 +72,12 @@
                             <label class="dft-form-label" for="">Вопрос или описание проблемы</label>
                             <textarea class="dft-form-input dft-form-textarea" rows="5" min-rows></textarea>
                         </div>
+                        <div class="dft-mrg_t_24 dft-form-group dft-form-group_checkbox">
+                            <input class="dft-form-checkbox" type="checkbox">
+                            <label class="dft-form-label">
+                                Я согласен(а) с <a class="dft-link" href="">политикой конфиденциальности</a>
+                            </label>
+                        </div>
                         <div class="dft-mrg_t_48">
                             <button class="dft-btn">
                                 Отправить

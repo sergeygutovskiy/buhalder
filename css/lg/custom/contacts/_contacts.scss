@@ -26,6 +26,7 @@
         align-items: baseline;
 
         > div {
+            margin-right: $grid-16;
             width: 60px;
             height: 60px;
             border-radius: 50%;
@@ -61,7 +62,7 @@
                 border-radius: 50%;
                 color: $color-primary;
                 
-                &:hover {
+                &:hover, &:focus {
                     background-color: $color-primary;
                     color: white;
                 }
@@ -70,7 +71,7 @@
     }
 
     &__form {
-        max-width: 420px;
+        max-width: 440px;
         width: 100%;
         padding: $grid-32 $grid-48;
         background-color: white;
