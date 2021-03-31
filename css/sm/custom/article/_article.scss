@@ -1,0 +1,33 @@
+.article {
+    &-content {
+        p {
+            margin-top: $grid-24;
+            margin-bottom: $grid-24;
+            font-size: 16px;
+        }
+
+        h4 {
+            margin-top: $grid-48;
+            display: block;
+        }
+
+        img {
+            margin-top: $grid-48;
+            margin-bottom: $grid-48;
+            display: block;
+            width: 100%;
+            border-radius: 20px;
+        }
+
+        blockquote {
+            margin-top: $grid-48;
+            margin-bottom: $grid-48;
+            display: block;
+            padding: $grid-8 $grid-16;
+            font-size: 16px;
+            line-height: 28px;
+
+            border-left: solid 5px $color-primary;
+        }
+    }
+}

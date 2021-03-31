@@ -1,0 +1,17 @@
+.blog-main-article {
+    padding: $grid-24;
+    border-radius: 20px;
+
+    &__content {
+        margin-right: 0;
+    }
+
+    &__info {
+        margin-right: 0;
+    }
+
+    &__image-wrapper {
+        margin-right: 0;
+        border-radius: 20px;
+    }
+}

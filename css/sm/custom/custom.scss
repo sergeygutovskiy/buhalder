@@ -9,10 +9,16 @@
 @import "_service_main";
 @import "_navigation";
 @import "_work";
+@import "_floating_phone";
 
 @import "about/_gallery";
 @import "about/_services";
 @import "about/_1C";
 @import "about/_people";
 
-@import "contacts/contacts";
+@import "contacts/_contacts";
+
+@import "blog/_main_article";
+@import "blog/_articles";
+
+@import "article/article";

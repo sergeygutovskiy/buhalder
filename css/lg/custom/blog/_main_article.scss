@@ -1,0 +1,32 @@
+.blog-main-article {
+    max-width: 1140px;
+    width: 100%;
+    padding: $grid-48;
+    background-color: $color-secondary;
+    border-radius: 40px;
+
+    &__content {
+        margin-right: -$grid-48;
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        flex-wrap: wrap;
+    }
+
+    &__info {
+        margin-right: $grid-48;
+        max-width: 470px;
+        width: 100%;
+        flex-basis: 400px;
+        flex-grow: 1;
+    }
+
+    &__image-wrapper {
+        margin-right: $grid-48;
+        max-width: 500px;
+        width: 100%;
+        flex-basis: 360px;
+        flex-grow: 1;
+        border-radius: 24px;
+    }
+}

@@ -404,5 +404,11 @@
                 padding-bottom: 70%;
             }
         }
+
+        &_60 {
+            &::after {
+                padding-bottom: 60%;
+            }
+        }
     }
 }

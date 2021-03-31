@@ -20,6 +20,16 @@ eval("function init() {    \n    let gallery_slider = new Swiper('.about-gallery
 
 /***/ }),
 
+/***/ "./src/_blog.js":
+/*!**********************!*\
+  !*** ./src/_blog.js ***!
+  \**********************/
+/***/ ((module) => {
+
+eval("function init() {\n    let slides = document.getElementsByClassName(\"blog-articles__items-wrapper\");\n    let buttons = document.getElementsByClassName(\"blog-articles__btn\");\n    let active_btn_index = 0;\n\n    for (let i = 0; i < buttons.length; i++) {\n        buttons[i].addEventListener(\"click\", function() {\n            buttons[active_btn_index].classList.remove(\"active\");\n            slides[active_btn_index].classList.remove(\"active\");\n    \n            this.classList.add(\"active\");\n            slides[i].classList.add(\"active\");\n        \n            active_btn_index = i;\n        });\n    }\n}\n\nmodule.exports = { init };\n\n//# sourceURL=webpack://App/./src/_blog.js?");
+
+/***/ }),
+
 /***/ "./src/_calculator.js":
 /*!****************************!*\
   !*** ./src/_calculator.js ***!
@@ -46,7 +56,7 @@ eval("function init() {\n    let slider = new Swiper('.comments__slider_lg', {\n
   \****************************/
 /***/ ((module) => {
 
-eval("function init() {\n    let btn = document.getElementsByClassName(\"navigation-btn\")[0];\n    let md_links_wrapper = document.getElementsByClassName(\"navigation_md__links-wrapper\")[0];\n    \n    btn.addEventListener(\"click\", function() {\n        this.classList.toggle(\"navigation-btn--active\");\n        md_links_wrapper.classList.toggle(\"active\");\n    });\n\n    let dropdown_toggle = document.querySelectorAll(\"[data-toggle]\")[0];\n    let dropdown = document.querySelectorAll(\"[data-dropdown='\" + dropdown_toggle.dataset.toggle + \"']\")[0];\n    \n    dropdown_toggle.addEventListener(\"focus\", function() {\n        dropdown.classList.add(\"active\");\n    });\n\n    dropdown_toggle.addEventListener(\"keydown\", function(event) {\n        if (event.shiftKey && event.keyCode == 9)\n            dropdown.classList.remove(\"active\");\n    });\n\n    dropdown.getElementsByTagName(\"a\")[dropdown.getElementsByTagName(\"a\").length - 1].addEventListener(\"keydown\", function(event) {\n        if (event.keyCode == 9)\n            dropdown.classList.remove(\"active\");\n    });\n\n    document.addEventListener(\"click\", (e) => {\n        let target = e.target; // clicked element\n    \n        if (target != dropdown && target != dropdown_toggle)\n            dropdown.classList.remove(\"active\");\n    });\n}\n\nmodule.exports = { init };\n\n//# sourceURL=webpack://App/./src/_navigation.js?");
+eval("function init() {\n    let btn = document.getElementsByClassName(\"navigation-btn\")[0];\n    let md_links_wrapper = document.getElementsByClassName(\"navigation_md__links-wrapper\")[0];\n    \n    btn.addEventListener(\"click\", function() {\n        this.classList.toggle(\"navigation-btn--active\");\n        md_links_wrapper.classList.toggle(\"active\");\n    });\n\n    let dropdown_toggle = document.querySelectorAll(\"[data-toggle]\")[0];\n    let dropdown = document.querySelectorAll(\"[data-dropdown='\" + dropdown_toggle.dataset.toggle + \"']\")[0];\n    \n    dropdown_toggle.addEventListener(\"focus\", function() {\n        dropdown.classList.add(\"active\");\n    });\n\n    dropdown_toggle.addEventListener(\"keydown\", function(event) {\n        if (event.shiftKey && event.keyCode == 9)\n            dropdown.classList.remove(\"active\");\n    });\n\n    dropdown.getElementsByTagName(\"a\")[dropdown.getElementsByTagName(\"a\").length - 1].addEventListener(\"keydown\", function(event) {\n        if (event.keyCode == 9)\n            dropdown.classList.remove(\"active\");\n    });\n}\n\nmodule.exports = { init };\n\n//# sourceURL=webpack://App/./src/_navigation.js?");
 
 /***/ }),
 
@@ -57,6 +67,16 @@ eval("function init() {\n    let btn = document.getElementsByClassName(\"navigat
 /***/ ((module) => {
 
 eval("\nfunction init() {\n    let close_button = document.getElementsByClassName(\"dft-overlay__button\")[0];\n    let overlay = document.getElementsByClassName(\"dft-overlay\")[0];\n    let overlay_items = document.getElementsByClassName(\"dft-overlay__items\")[0];\n\n    close_button.addEventListener(\"click\", function() {\n        overlay.classList.remove(\"active\");\n        overlay_items.textContent = \"\";\n    });\n\n    overlay_items.addEventListener(\"click\", function() {\n        overlay.classList.remove(\"active\");\n        overlay_items.textContent = \"\";\n    });\n\n    let triggers = document.getElementsByClassName(\"dft-overlay-trigger\");\n    for (let i = 0; i < triggers.length; i++) {\n        let t = triggers[i];\n\n        t.addEventListener(\"click\", choose);\n    }\n}\n\nfunction open() {\n    let overlay = document.getElementsByClassName(\"dft-overlay\")[0];\n    overlay.classList.add(\"active\");\n}\n\nfunction choose() {\n    let overlays = document.getElementsByClassName(\"dft-overlay-item\");\n    let overlay_items = document.getElementsByClassName(\"dft-overlay__items\")[0];\n\n    for (let i = 0; i < overlays.length; i++) {\n        let item = overlays[i];\n\n        if (item.dataset.overlay == this.dataset.overlayTarget) {\n            overlay_items.appendChild(item.childNodes[1].cloneNode(true));\n            open();\n            break;\n        }\n    }\n}\n\nmodule.exports = { init, open };\n\n//# sourceURL=webpack://App/./src/_overlay.js?");
+
+/***/ }),
+
+/***/ "./src/_phone.js":
+/*!***********************!*\
+  !*** ./src/_phone.js ***!
+  \***********************/
+/***/ ((module) => {
+
+eval("\nfunction init() {\n    let container = document.getElementsByClassName(\"floating-phone\")[0];\n    let open_button = document.getElementsByClassName(\"floating-phone__open-button\")[0];\n    let close_button = document.getElementsByClassName(\"floating-phone__close-button\")[0];\n\n    open_button.addEventListener(\"click\", function() {\n        container.classList.add(\"active\");\n    });\n\n    close_button.addEventListener(\"click\", function() {\n        container.classList.remove(\"active\");\n    });\n}\n\n\nmodule.exports = { init, open };\n\n//# sourceURL=webpack://App/./src/_phone.js?");
 
 /***/ }),
 
@@ -104,9 +124,9 @@ eval("function init() {\n    let slider = new Swiper(\".work-timeline__body .swi
 /*!**********************!*\
   !*** ./src/index.js ***!
   \**********************/
-/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+/***/ ((__unused_webpack_module, __unused_webpack_exports, __webpack_require__) => {
 
-eval("const navigation      = __webpack_require__(/*! ./_navigation.js */ \"./src/_navigation.js\");\nconst overlay         = __webpack_require__(/*! ./_overlay.js */ \"./src/_overlay.js\");\n\nconst calculator      = __webpack_require__(/*! ./_calculator.js */ \"./src/_calculator.js\");\nconst service_info    = __webpack_require__(/*! ./_service_info.js */ \"./src/_service_info.js\");\nconst questions       = __webpack_require__(/*! ./_questions.js */ \"./src/_questions.js\");\nconst comments        = __webpack_require__(/*! ./_comments.js */ \"./src/_comments.js\");\nconst work            = __webpack_require__(/*! ./_work.js */ \"./src/_work.js\");\nconst service_main    = __webpack_require__(/*! ./_service_main.js */ \"./src/_service_main.js\");\n\nconst about_gallery   = __webpack_require__(/*! ./_about_gallery.js */ \"./src/_about_gallery.js\");\n\nnavigation.init();\noverlay.init();\n\ncalculator.init();\nservice_info.init();\nquestions.init();\ncomments.init();\nwork.init();\nservice_main.init();\n\nabout_gallery.init();\n\n\nmodule.exports = {\n    overlay\n};\n\n//# sourceURL=webpack://App/./src/index.js?");
+eval("const navigation      = __webpack_require__(/*! ./_navigation.js */ \"./src/_navigation.js\");\nconst overlay         = __webpack_require__(/*! ./_overlay.js */ \"./src/_overlay.js\");\nconst phone           = __webpack_require__(/*! ./_phone.js */ \"./src/_phone.js\");\n\nconst calculator      = __webpack_require__(/*! ./_calculator.js */ \"./src/_calculator.js\");\nconst service_info    = __webpack_require__(/*! ./_service_info.js */ \"./src/_service_info.js\");\nconst questions       = __webpack_require__(/*! ./_questions.js */ \"./src/_questions.js\");\nconst comments        = __webpack_require__(/*! ./_comments.js */ \"./src/_comments.js\");\nconst work            = __webpack_require__(/*! ./_work.js */ \"./src/_work.js\");\nconst service_main    = __webpack_require__(/*! ./_service_main.js */ \"./src/_service_main.js\");\nconst about_gallery   = __webpack_require__(/*! ./_about_gallery.js */ \"./src/_about_gallery.js\");\nconst blog            = __webpack_require__(/*! ./_blog.js */ \"./src/_blog.js\");\n\nnavigation.init();\noverlay.init();\nphone.init();\n\ncalculator.init();\nservice_info.init();\nquestions.init();\ncomments.init();\nwork.init();\nservice_main.init();\n\nabout_gallery.init();\n\nblog.init();\n\n//# sourceURL=webpack://App/./src/index.js?");
 
 /***/ })
 
@@ -140,7 +160,7 @@ eval("const navigation      = __webpack_require__(/*! ./_navigation.js */ \"./sr
 /******/ 	
 /******/ 	// startup
 /******/ 	// Load entry module and return exports
-/******/ 	// This entry module is referenced by other modules so it can't be inlined
+/******/ 	// This entry module can't be inlined because the eval devtool is used.
 /******/ 	var __webpack_exports__ = __webpack_require__("./src/index.js");
 /******/ 	App = __webpack_exports__;
 /******/ 	

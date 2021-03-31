@@ -1,0 +1,25 @@
+.floating-phone {
+    margin-right: $grid-24;
+    margin-bottom: $grid-24;
+    border-radius: 37.5px;
+
+    &__item {
+        width: 48px;
+        height: 48px;
+        font-size: 20px;
+    }
+
+    &__items {
+        > a {
+            margin-right: $grid-8;
+        } 
+    }
+
+    &__whatsapp {
+        font-size: 26px;
+    }
+
+    &__telegram {
+        font-size: 23px;
+    }
+}
