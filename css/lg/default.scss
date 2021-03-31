@@ -241,10 +241,10 @@
 
     &-link {
         color: $color-primary;
-        border-bottom: solid 0.1em transparent;
+        border-bottom: solid 2px transparent;
 
         &:hover, &:focus {
-            border-bottom: solid 0.1em $color-primary;
+            border-bottom: solid 2px $color-primary;
         }
 
         &:hover {
@@ -255,7 +255,7 @@
             color: $color-font-primary;
 
             &:hover, &:focus {
-                border-bottom: solid 0.1em transparent;
+                border-bottom: solid 2px transparent;
                 color: $color-primary;
             }
         }

@@ -3,18 +3,21 @@
 
 @import "lg/main.scss";
 @import "lg/default.scss";
-@import "lg/custom/custom.scss";
+@import "lg/templates/templates.scss";
+@import "lg/pages/pages.scss";
 
 @media screen and (max-width: $dft-width-md)
 {
     @import "md/main.scss";
     @import "md/default.scss";
-    @import "md/custom/custom.scss";
+    @import "md/templates/templates.scss";
+    @import "md/pages/pages.scss";
 }
 
 @media screen and (max-width: $dft-width-sm)
 {
     @import "sm/main.scss";
     @import "sm/default.scss";
-    @import "sm/custom/custom.scss";
+    @import "sm/templates/templates.scss";
+    @import "sm/pages/pages.scss";
 }

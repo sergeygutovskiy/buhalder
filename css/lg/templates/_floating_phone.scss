@@ -1,6 +1,6 @@
 .floating-phone {
     position: fixed;
-    z-index: 1;
+    z-index: 10;
     bottom: 0;
     right: 0;
     margin-right: $grid-48;
@@ -8,9 +8,9 @@
     display: flex;
     flex-direction: row-reverse;
     padding: 4px;
-    border: 1px solid white;
+    border: 1px solid transparent;
     border-radius: 37.5px;
-    background-color: white;
+    background-color: transparent;
 
     &__item {
         width: 64px;
@@ -83,6 +83,7 @@
 
     &.active {
         border: 1px solid #EFF6FE;
+        background-color: white;
         box-shadow: 2px 7px 20px 1px rgba(38, 33, 58, 0.08);
     }
 }
