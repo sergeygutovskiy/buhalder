@@ -127,8 +127,7 @@
     padding-bottom: $grid-16;
     background-color: white;
 
-    max-height: calc(var(--vh, 1vh) * 100);
-    overflow-y: auto;
+    height: calc(var(--vh, 1vh) * 100);
 
     &__content {
         display: flex;
@@ -240,6 +239,7 @@
     &__contacts {
         display: none;
         margin-top: auto;
+        padding-bottom: $grid-16;
 
         > li {
             display: flex;

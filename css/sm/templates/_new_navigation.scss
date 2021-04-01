@@ -1,4 +1,29 @@
+.navigation {
+    &-dropdown {
+        &__item {
+            flex: 100%;
+            padding: $grid-8 $grid-16;
+    
+            p {
+                display: none;
+            }
+
+            &-icon {
+                display: none;
+            }
+        }
+    }
+}
+
 .navigation_md {
+    padding: 0;
+    overflow: auto;
+
+    &__content {
+        padding-top: $grid-16;
+        padding-bottom: $grid-16;
+    }
+
     &__logo {
         > img {
             height: 24px;
@@ -17,7 +42,7 @@
             flex-direction: column;
             
             &.active {
-                height: calc((var(--vh, 1vh) * 100) - 24px - 16px * 2);
+                min-height: calc((var(--vh, 1vh) * 100) - 24px - 16px * 2);
             }
         }
     }

@@ -1,5 +1,5 @@
 <div class="service-info dft-block-center">
-    <header class="text-center">
+    <header class="dft-text-center">
         <div class="dft-title">Бухгалтерская компания «НеГа Консалтинг»</div>
         <br>
         <h3 class="dft-mrg_t_48">
