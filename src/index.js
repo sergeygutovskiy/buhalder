@@ -11,6 +11,9 @@ const service_main    = require("./_service_main.js");
 const about_gallery   = require("./_about_gallery.js");
 const blog            = require("./_blog.js");
 
+let vh = window.innerHeight * 0.01;
+document.documentElement.style.setProperty('--vh', `${vh}px`);
+
 navigation.init();
 overlay.init();
 phone.init();
@@ -23,5 +26,4 @@ work.init();
 service_main.init();
 
 about_gallery.init();
-
 blog.init();
