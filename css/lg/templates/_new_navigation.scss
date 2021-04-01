@@ -1,6 +1,6 @@
 .navigation {
     position: relative;
-    z-index: 10;
+    z-index: $z-layer-navigation;
     padding-top: $grid-64;
 
     &__content {
@@ -121,13 +121,13 @@
     position: fixed;
     top: 0;
     left: 0;
-    z-index: 10;
+    z-index: $z-layer-navigation;
     width: 100%;
     padding-top: $grid-16;
     padding-bottom: $grid-16;
     background-color: white;
 
-    height: calc(var(--vh, 1vh) * 100);
+    max-height: calc(var(--vh, 1vh) * 100);
 
     &__content {
         display: flex;
@@ -233,13 +233,14 @@
             @include flex-between;
             flex-wrap: wrap;
             width: 720px;
+            max-width: 100%;
         }
     }
 
     &__contacts {
         display: none;
         margin-top: auto;
-        padding-bottom: $grid-16;
+        padding-bottom: $grid-24;
 
         > li {
             display: flex;

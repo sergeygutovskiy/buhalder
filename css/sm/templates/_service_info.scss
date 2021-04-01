@@ -1,0 +1,11 @@
+.service-info {
+    &__nav {
+        &-wrapper {
+            overflow-x: auto;
+            overflow-y: hidden;
+        }
+        
+        flex-wrap: nowrap;
+        width: max-content;
+    }
+}

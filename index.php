@@ -7,9 +7,7 @@
 
         <?php require "views/custom/_index_header.php"; ?>
         
-        <section class="dft-mrg_t_120 dft-container">
-            <?php require "views/templates/_service_info.php"; ?>
-        </section>
+        <?php require "views/templates/_service_info.php"; ?>
 
         <?php require "views/custom/_service_main.php"; ?>
         <?php require "views/index/_services.php"; ?>

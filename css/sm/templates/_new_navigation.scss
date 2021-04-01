@@ -2,13 +2,10 @@
     &-dropdown {
         &__item {
             flex: 100%;
-            padding: $grid-8 $grid-16;
+            padding: $grid-8 0;
+            align-items: center;
     
             p {
-                display: none;
-            }
-
-            &-icon {
                 display: none;
             }
         }
@@ -20,7 +17,7 @@
     overflow: auto;
 
     &__content {
-        padding-top: $grid-16;
+        padding-top: $grid-24;
         padding-bottom: $grid-16;
     }
 
@@ -42,7 +39,7 @@
             flex-direction: column;
             
             &.active {
-                min-height: calc((var(--vh, 1vh) * 100) - 24px - 16px * 2);
+                min-height: calc((var(--vh, 1vh) * 100) - 24px - 24px - 16px);
             }
         }
     }
