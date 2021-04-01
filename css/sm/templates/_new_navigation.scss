@@ -1,0 +1,28 @@
+.navigation_md {
+    &__logo {
+        > img {
+            height: 24px;
+        }
+    }
+
+    &__button {
+        width: $grid-24;
+        height: $grid-16;
+        background-color: transparent;
+    }
+
+    &__links {
+        &-wrapper {
+            display: flex;
+            flex-direction: column;
+            
+            &.active {
+                height: calc(100vh - 24px - 16px * 2);
+            }
+        }
+    }
+
+    &__contacts {
+        display: block;
+    }
+}
