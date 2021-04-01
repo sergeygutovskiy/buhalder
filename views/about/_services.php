@@ -8,42 +8,42 @@
     </p>
     <div class="about-services dft-mrg_t_64 dft-block-center">        
         <div class="about-services__body">
-            <div class="about-service dft-text-center">
+            <a class="about-service dft-text-center" href="">
                 <div class="about-service__icon dft-block-center"><i class="fas fa-check"></i></div>
                 <div class="about-service__title dft-mrg_t_24">
                     1С:БухОбслуживание <br> от НеГа Консалтинг
                 </div>
-            </div>
-            <div class="about-service dft-text-center">
+            </a>
+            <a class="about-service dft-text-center" href="">
                 <div class="about-service__icon dft-block-center"><i class="fas fa-check"></i></div>
                 <div class="about-service__title dft-mrg_t_24">
                     Консультация по налогообложению
                 </div>
-            </div>
-            <div class="about-service dft-text-center">
+            </a>
+            <a class="about-service dft-text-center" href="">
                 <div class="about-service__icon dft-block-center"><i class="fas fa-check"></i></div>
                 <div class="about-service__title dft-mrg_t_24">
                     Юридическое сопровождение
                 </div>
-            </div>
-            <div class="about-service dft-text-center">
+            </a>
+            <a class="about-service dft-text-center" href="">
                 <div class="about-service__icon dft-block-center"><i class="fas fa-check"></i></div>
                 <div class="about-service__title dft-mrg_t_24">
                     Первая консультация бесплатно
                 </div>
-            </div>
-            <div class="about-service dft-text-center">
+            <a>
+            <a class="about-service dft-text-center" href="">
                 <div class="about-service__icon dft-block-center"><i class="fas fa-check"></i></div>
                 <div class="about-service__title dft-mrg_t_24">
                     Месяц обслуживания бесплатно
                 </div>
-            </div>
-            <div class="about-service dft-text-center">
+            </a>
+            <a class="about-service dft-text-center">
                 <div class="about-service__icon dft-block-center"><i class="fas fa-check"></i></div>
                 <div class="about-service__title dft-mrg_t_24">
                     Экспресс-аудит учета бесплатно
                 </div>
-            </div>
+            </a>
         </div>
     </div>
 </section>

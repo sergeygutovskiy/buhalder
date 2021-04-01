@@ -2273,6 +2273,16 @@ iframe {
   }
 }
 @media screen and (max-width: 600px) {
+  .service-info__nav {
+    flex-wrap: nowrap;
+    width: max-content;
+  }
+  .service-info__nav-wrapper {
+    overflow-x: auto;
+    overflow-y: hidden;
+  }
+}
+@media screen and (max-width: 600px) {
   .navigation-dropdown__item {
     flex: 100%;
     padding: 8px 0;
@@ -2308,16 +2318,6 @@ iframe {
   }
   .navigation_md__contacts {
     display: block;
-  }
-}
-@media screen and (max-width: 600px) {
-  .service-info__nav {
-    flex-wrap: nowrap;
-    width: max-content;
-  }
-  .service-info__nav-wrapper {
-    overflow-x: auto;
-    overflow-y: hidden;
   }
 }
 @media screen and (max-width: 600px) {
