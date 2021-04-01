@@ -1,6 +1,7 @@
 .blog-articles {
     &__items {
         margin-right: 0;
+        grid-template-columns: 1fr;
     }
 }
 

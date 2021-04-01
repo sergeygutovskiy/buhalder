@@ -57,6 +57,22 @@
                                 <a class="dft-link" href="">Читать</a>
                             </div>
                         </article>
+                        <article class="blog-article">
+                            <div class="blog-article__image-wrapper dft-image-wrapper dft-image-wrapper_70">
+                                <img src="imgs/cat.gif" alt="">
+                            </div>
+                            <h4 class="dft-mrg_t_24">
+                                <a class="dft-link dft-link_secondary" href="">Старый добрый формат ОФЛАЙН</a>
+                            </h4>
+                            <p class="dft-mrg_t_24 dft-mrg_b_32">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
+                                sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+                                Ut enim ad minim veniam
+                            </p>
+                            <div class="blog-article__bottom">
+                                <a class="dft-link" href="">Читать</a>
+                            </div>
+                        </article>
                     </div>
                 </div>
                 <div class="blog-articles__items-wrapper">
