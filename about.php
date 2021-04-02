@@ -22,7 +22,7 @@
         <?php require "views/about/_1C.php"; ?>
         <?php require "views/about/_people.php"; ?>
 
-        <div class="dft-mrg_t_120 dft-container">
+        <section class="dft-mrg_t_120 dft-container">
             <div class="dft-block-center dft-target dft-text-center">
                 <div class="dft-title">Вакансии</div>
                 <div class="dft-target__title dft-mrg_t_32">Интересует работа в компании?</div>
@@ -35,7 +35,7 @@
                 </p>
                 <a class="dft-mrg_t_32 dft-btn" href="">Написать</a>
             </div>
-        </div>
+        </section>
 
         <!-- footer -->
         <?php require "views/templates/_footer.php"; ?>

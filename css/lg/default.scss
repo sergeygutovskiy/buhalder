@@ -91,6 +91,10 @@
             font-weight: 600;
         }
 
+        &-primary {
+            color: $color-primary;
+        }
+
         &-center {
             text-align: center;
         }
@@ -104,7 +108,7 @@
 
     &-btn {
         display: inline-block;
-        padding: $grid-16 $grid-48;
+        padding: $grid-16 $grid-32;
         border-radius: $grid-8;
         font-size: 100%;
         font-weight: 600;
@@ -410,6 +414,43 @@
             &::after {
                 padding-bottom: 60%;
             }
+        }
+    }
+
+    &-icon-wrapper {
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        &_blue {
+            background-color: #E7F2FF;
+            color: #0C7DFF;
+        }
+
+        &_light_blue {
+            background-color: #EBFBFF;
+            color: #04D2FC;
+        }
+
+        &_orange {
+            background-color: #FDF5F2;
+            color: #FFA05C;
+        }
+
+        &_red {
+            background-color: #FEF1F2;
+            color: #F5818C;
+        }
+
+        &_green {
+            background-color: #F0FBF7;
+            color: #47D39B;
+        }
+
+        &_purple {
+            background-color: #F3EFFF;
+            color: #6F3CFF;
         }
     }
 }

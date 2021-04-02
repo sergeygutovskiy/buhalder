@@ -27,20 +27,11 @@
         max-width: 580px;
     }
 
-    &__slide {
-        
-    }
-
     &__slide-wrapper {
-        visibility: hidden;
-
-        &:not(:last-child) {
-            position: absolute;
-            left: 0;
-        }
+        display: none;
 
         &.active {
-            visibility: visible;
+            display: block;
         }
     }
 

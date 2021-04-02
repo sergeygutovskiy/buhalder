@@ -1,0 +1,18 @@
+.titled-paragraph {
+
+    &__info {
+        flex: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap;
+
+        > div:last-child {
+            margin-top: 0;
+        }
+    }
+
+    &__body {
+        flex: 100%;
+    }
+}
