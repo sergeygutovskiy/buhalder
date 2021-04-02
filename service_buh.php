@@ -23,7 +23,7 @@
                         </div>
                     </div>
                     <div class="service-header__image-wrapper">
-                        <img src="imgs/3.svg" alt="">
+                        <img src="imgs/_3.svg" alt="">
                     </div>
                 </div>
             </div>
