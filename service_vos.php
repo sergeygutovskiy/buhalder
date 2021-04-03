@@ -28,6 +28,95 @@
             </div>
         </header>
 
+        <section class="dft-mrg_t_120">
+            <div class="service-services">
+                <header class="dft-container dft-text-center">
+                    <h3>Услуги по восстановлению <br> бухгалтерского учета</h3>
+                </header>
+                <div class="service-services__content">
+                    <div class="service-services__nav-wrapper">
+                        <nav class="service-services__nav dft-mrg_t_48 dft-wrp-mrg_b_8 dft-container">
+                            <button class="service-services__btn dft-btn dft-mrg_b_8 dft-btn_trans active">Экспресс аудит бухучета</button>
+                            <button class="service-services__btn dft-btn dft-mrg_b_8 dft-btn_trans">
+                                Восстановление бухгалтерского и налогового учёта
+                            </button>
+                            <button class="service-services__btn dft-btn dft-mrg_b_8 dft-btn_trans">Частичное восстановление </button>
+                            <button class="service-services__btn dft-btn dft-mrg_b_8 dft-btn_trans">Восстановление отчётности</button>
+                        </nav>
+                    </div>
+                    <div class="dft-mrg_t_64 dft-container">
+                        <div class="service-services__slider">
+                            <div class="service-services__titles">
+                                <div class="service-services__titles-slider swiper-container">
+                                    <div class="swiper-wrapper">
+                                        <div class="swiper-slide">
+                                            <h3>Экспресс аудит бухучета</h3>
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <h3>Восстановление бухгалтерского и налогового учёта</h3>
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <h3>Частичное восстановление</h3>
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <h3>Восстановление отчётности</h3>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="service-services__titles-footer">
+                                    <div class="service-services__pagination dft-pagination"></div>
+                                    <div class="service-services__buttons">
+                                        <button 
+                                            class="dft-pagination__button service-services__button_left">
+                                            <img src="imgs/arrow.svg">
+                                        </button>
+                                        <button 
+                                            class="dft-pagination__button dft-pagination__button_right service-services__button_right">
+                                            <img src="imgs/arrow.svg">
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="service-services__texts">
+                                <div class="service-services__texts-slider swiper-container">
+                                    <div class="swiper-wrapper">
+                                        <div class="swiper-slide">
+                                            <p>
+                                                Быстрая проверка бухгалтерского учета позволяет оперативно проверить вашу компанию. 
+                                                При проверке выбирается определенный период деятельности компании или отдельные области работы. 
+                                                Также экспресс аудит позволяет подготовится к проверке налоговой службы.
+                                            </p>
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <p>
+                                                Очный анализ с выездом квалифицированного бухгалтера для выявления проблем 
+                                                вызванных отсутствием или некорректным ведением бухгалтерии. Анализ первичной документации, договоров, 
+                                                сданной или отсутствующей отчетности. Контроль ведения налоговых расчётов, использования льгот и т. д.
+                                            </p>
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <p>
+                                                По желанию заказчика или по необходимости частичного восстановления бухучета у вас 
+                                                на предприятии мы можем произвести необходимые работы. 
+                                                Так же когда руководителю требуется проконтролировать работу штатного бухгалтера, 
+                                                мы можем провести частичный или полный аудит вашей бухгалтерии.
+                                            </p>
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <p>
+                                                Удаленный анализ проблем вызванных отсутствием или некорректным ведением бухгалтерии. 
+                                                Анализ первичной документации, договоров, сданной или отсутствующей отчетности.
+                                            </p>
+                                        </div>
+                                    </div>                                
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
         <section class="dft-mrg_t_120 dft-container">
             <div class="titled-paragraph">
                 <div class="titled-paragraph__info">
@@ -49,8 +138,10 @@
                     </p>
                     <p class="dft-mrg_t_24">
                         С целью недопущения существенных налоговых санкций руководителю может потребоваться 
-                        восстановление бухгалтерского и налогового учета в организации. Если учет велся некорректно 
-                        или не велся вообще, мы проанализируем состояние бухгалтерии предприятия на текущее время и 
+                        <span class="dft-text-bold dft-text-primary"> 
+                        восстановление бухгалтерского и налогового учета</span> 
+                        в организации. Если учет велся некорректно
+                        или не велся вообще, мы проанализируем состояние бухгалтерии предприятия на текущее время и
                         на основании сделанных выводов разработаем стратегию по восстановлению налогового и бухучета.
                     </p>
                     <p class="dft-mrg_t_24">

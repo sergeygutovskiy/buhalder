@@ -1,0 +1,37 @@
+.service-services {
+    &__nav {
+        &-wrapper {
+            overflow-x: auto;
+            overflow-y: hidden;
+        }
+        
+        flex-wrap: nowrap;
+        width: max-content;
+    }
+
+    &__slider {
+        padding: $grid-24;
+        border-radius: 20px;
+    }
+
+    &__titles {
+        max-width: 100%;
+        width: 540px;
+        padding: 0;
+        padding-bottom: $grid-16;
+    
+        &-footer {
+            display: none;
+        }
+    }
+
+    &__texts {
+        max-width: 100%;
+        width: 100%;
+        padding: 0;
+        
+        &-slider {
+            padding: $grid-16 $grid-24;
+        };
+    }
+}
