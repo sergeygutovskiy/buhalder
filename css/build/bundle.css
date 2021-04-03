@@ -1110,26 +1110,28 @@ iframe {
   height: 2px;
   border-radius: 1px;
   background-color: #0C7DFF;
+  transition: transform 150ms linear, opacity 150ms linear;
 }
 .navigation_md__button > div > span:nth-child(1) {
-  top: 0;
+  top: 50%;
+  transform: translateY(-10px);
 }
 .navigation_md__button > div > span:nth-child(2) {
-  top: 7px;
+  top: 50%;
+  transform: translateY(-1px);
 }
 .navigation_md__button > div > span:nth-child(3) {
-  bottom: 0;
+  top: 50%;
+  transform: translateY(8px);
 }
 .navigation_md__button.active > div > span:nth-child(1) {
-  top: 50%;
-  transform: rotateZ(-45deg) translate(2%, -50%);
+  transform: rotateZ(-45deg);
 }
 .navigation_md__button.active > div > span:nth-child(2) {
-  display: none;
+  opacity: 0;
 }
 .navigation_md__button.active > div > span:nth-child(3) {
-  bottom: 50%;
-  transform: rotateZ(45deg) translateY(50%);
+  transform: rotateZ(45deg);
 }
 .navigation_md__links {
   padding-top: 64px;
