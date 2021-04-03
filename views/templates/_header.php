@@ -1,4 +1,4 @@
-<header class="nav-contacts dft-mrg_b_48">
+<header class="nav-contacts">
     <nav class="nav-contacts__list dft-container">
         <div class="nav-contacts__left">
             <a class="nav-contacts__item dft-link dft-link_secondary" href="mailto:nega.konsalting@yandex.ru">

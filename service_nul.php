@@ -78,7 +78,7 @@
                 <div class="service-bonuses__items-wrapper dft-mrg_t_48">
                     <div class="service-bonuses__items">
                         <div class="service-bonuses__col">
-                            <div class="service-bonuses__item dft-mrg_t_48">
+                            <div class="service-bonuses__item">
                                 <div class="dft-icon-wrapper dft-icon-wrapper_orange">
                                     <i class="fas fa-bolt"></i>
                                 </div>
