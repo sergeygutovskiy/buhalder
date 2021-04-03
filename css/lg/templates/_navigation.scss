@@ -185,20 +185,15 @@
             > div {
                 > span {
                     &:nth-child(1) {
-                        // top: 50%;
                         transform: rotateZ(-45deg);
-                        // transform: rotateZ(-90deg);
                     }
             
                     &:nth-child(2) {
                         opacity: 0;
-                        // transform: rotateZ(-90deg);         
                     }
             
                     &:nth-child(3) {
-                        // bottom: 50%;
                         transform: rotateZ(45deg);
-                        // transform: rotateZ(-90deg);
                     }
                 }
             }

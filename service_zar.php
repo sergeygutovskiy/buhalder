@@ -30,6 +30,53 @@
             </div>
         </header>
 
+        <section class="dft-mrg_t_120 dft-container">
+            <header class="dft-text-center">
+                <div class="dft-title">Услуги</div>
+                <div><h3 class="dft-mrg_t_48">Услуги по ведению кадрового учета</h3></div>
+            </header>
+            <div class="service-zar-services">
+                <div class="service-zar-services__nav-wrapper">
+                    <nav class="service-zar-services__nav">
+                        <button class="service-zar-services__btn dft-btn dft-mrg_b_8 dft-btn_trans active">Ведение кадрового делопроизводства</button>
+                        <button class="service-zar-services__btn dft-btn dft-mrg_b_8 dft-btn_trans"       >Восстановление кадрового учета</button>
+                    </nav>
+                </div>
+                <div class="service-zar-services__content">
+                    <div class="service-zar-services__slide-wrapper">
+                        <div class="service-zar-services__slide-col">
+                            <div class="service-zar-services__item">
+                                <div></div>
+                                <p>
+                                    Первичное оформление документов при приеме сотрудника в штат
+                                </p>
+                            </div>
+                            <div class="service-zar-services__item">
+                                <div></div>
+                                <p>
+                                    Внесение изменений в условия трудового договора
+                                </p>
+                            </div>
+                            <div class="service-zar-services__item">
+                                <div></div>
+                                <p>
+                                    Полное сопровождение увольнения сотрудников
+                                </p>
+                            </div>
+                            <div class="service-zar-services__item">
+                                <div></div>
+                                <p>
+                                    Составление штатных расписаний
+                                </p>
+                            </div>
+                        </div>
+                        <div class="service-zar-services__slide-col">
+                            
+                        </div>  
+                    </div>
+                </div>
+            </div>
+        </section>
 
         <section class="dft-mrg_t_120 dft-container">
             <div class="titled-paragraph">
